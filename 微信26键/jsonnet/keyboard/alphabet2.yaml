@@ -3,9 +3,6 @@
       "action": {
          "character": "a"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "bounds": {
          "alignment": "right",
@@ -22,7 +19,7 @@
          "aButtonDownForegroundStyle"
       ],
       "hintStyle": "aButtonHintStyle",
-      "hintSymbolsStyle": "aButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "aButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.15"
@@ -44,9 +41,9 @@
       ]
    },
    "aButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -54,30 +51,29 @@
       "text": "A"
    },
    "aButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "checklist"
    },
    "aButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "A"
    },
    "aButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -88,10 +84,6 @@
       "foregroundStyle": [
          "aButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "aButtonSwipeDownHintForegroundStyle"
       ],
@@ -101,100 +93,77 @@
       ]
    },
    "aButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "'"
    },
    "aButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "＇"
    },
    "aButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˉ"
    },
    "aButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "'"
+         },
+         {
+            "symbol": "＇"
+         },
+         {
+            "symbol": "ˉ"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "aButtonHintSymbolsSubclassStyle1",
-         "aButtonHintSymbolsSubclassStyle2",
-         "aButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "aButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "'"
-      },
       "foregroundStyle": [
          "aButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "aButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "＇"
-      },
-      "foregroundStyle": [
          "aButtonHintSymbolsForegroundStyle2",
-         "fullStyle"
-      ]
-   },
-   "aButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "ˉ"
-      },
-      "foregroundStyle": [
          "aButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "aButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "全选"
    },
    "aButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "`"
    },
    "aButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "`"
    },
    "aButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -202,26 +171,29 @@
       "text": "A"
    },
    "alphabeticButtonBackgroundStyle": {
-      "buttonStyleType": "geometry",
+      "borderSize": 1,
       "cornerRadius": 7,
-      "highlightColor": "00103429",
-      "highlightLowerEdgeColor": "0000004D",
+      "highlightColor": "ffffff19",
+      "highlightLowerEdgeColor": "00000080",
       "insets": {
          "bottom": 5,
          "left": 3,
          "right": 3,
          "top": 7
       },
-      "normalColor": "feffff",
-      "normalLowerEdgeColor": "0000004D"
+      "normalColor": "d1d1d165",
+      "normalLowerEdgeColor": "00000080",
+      "shadowOffset": {
+         "x": 0,
+         "y": 3
+      },
+      "shadowRadius": 3,
+      "type": "original"
    },
    "bButton": {
       "action": {
          "character": "b"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "bButtonCapsLockedStateForegroundStyle",
@@ -232,7 +204,7 @@
          "bButtonUpForegroundStyle"
       ],
       "hintStyle": "bButtonHintStyle",
-      "hintSymbolsStyle": "bButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "bButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -250,9 +222,9 @@
       ]
    },
    "bButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -260,19 +232,18 @@
       "text": "B"
    },
    "bButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "B"
    },
    "bButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -283,112 +254,99 @@
       "foregroundStyle": [
          "bButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "bButtonSwipeUpHintForegroundStyle"
       ]
    },
    "bButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "丶"
    },
    "bButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ","
    },
    "bButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "，"
    },
    "bButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "丶"
+         },
+         {
+            "symbol": ","
+         },
+         {
+            "symbol": "，"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "bButtonHintSymbolsSubclassStyle1",
-         "bButtonHintSymbolsSubclassStyle2",
-         "bButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "bButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "丶"
-      },
       "foregroundStyle": [
-         "bButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "bButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": ","
-      },
-      "foregroundStyle": [
+         "bButtonHintSymbolsForegroundStyle1",
          "bButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "bButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "，"
-      },
-      "foregroundStyle": [
-         "bButtonHintSymbolsForegroundStyle3",
-         "fullStyle"
-      ]
+         "bButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "bButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
          "x": 0.59999999999999998,
-         "y": 0.17999999999999999
+         "y": 0.47999999999999998
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "、"
    },
    "bButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.23000000000000001
+         "y": 0.53000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "、"
    },
    "bButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
       "normalColor": "000000",
       "text": "B"
    },
+   "backgroundAnimation": [
+      {
+         "duration": 40,
+         "fromScale": 1,
+         "repeatCount": 1,
+         "toScale": 0.87,
+         "type": "bounds"
+      },
+      {
+         "duration": 80,
+         "fromScale": 0.87,
+         "repeatCount": 1,
+         "toScale": 1,
+         "type": "bounds"
+      }
+   ],
    "backspaceButton": {
       "action": "backspace",
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "systemButtonBackgroundStyle",
       "bounds": {
          "alignment": "right",
@@ -404,45 +362,44 @@
          }
       },
       "swipeDownAction": {
-         "shortcut": "#undo"
+         "shortcutCommand": "#撤销"
       },
       "swipeUpAction": {
          "shortcutCommand": "#deleteText"
       }
    },
    "backspaceButtonDownForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "backspaceButtonForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "fontSize": 20,
-      "highlightColor": "000000",
-      "highlightSystemImageName": "delete.left.fill",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "delete.left"
    },
    "backspaceButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "blueButtonBackgroundStyle": {
-      "buttonStyleType": "geometry",
+      "borderSize": 1,
       "cornerRadius": 7,
-      "highlightColor": "feffff",
-      "highlightLowerEdgeColor": "0000004D",
+      "highlightColor": "d1d1d165",
+      "highlightLowerEdgeColor": "00000080",
       "insets": {
          "bottom": 5,
          "left": 3,
@@ -450,12 +407,17 @@
          "top": 7
       },
       "normalColor": "23C891",
-      "normalLowerEdgeColor": "0000004D"
+      "normalLowerEdgeColor": "00000080",
+      "shadowOffset": {
+         "x": 0,
+         "y": 3
+      },
+      "shadowRadius": 3,
+      "type": "original"
    },
    "blueButtonForegroundStyle": {
-      "buttonStyleType": "text",
       "fontSize": 16,
-      "highlightColor": "000000",
+      "highlightColor": "feffff",
       "normalColor": "feffff",
       "text": "$returnKeyType"
    },
@@ -463,9 +425,6 @@
       "action": {
          "character": "c"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "cButtonCapsLockedStateForegroundStyle",
@@ -478,14 +437,14 @@
          "cButtonDownForegroundStyle"
       ],
       "hintStyle": "cButtonHintStyle",
-      "hintSymbolsStyle": "cButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "cButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
          }
       },
       "swipeDownAction": {
-         "shortcut": "#copy"
+         "shortcutCommand": "#复制"
       },
       "swipeUpAction": {
          "character": "/"
@@ -500,9 +459,9 @@
       ]
    },
    "cButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -510,30 +469,29 @@
       "text": "C"
    },
    "cButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "square.on.square.dashed"
    },
    "cButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "C"
    },
    "cButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -544,10 +502,6 @@
       "foregroundStyle": [
          "cButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "cButtonSwipeDownHintForegroundStyle"
       ],
@@ -557,99 +511,77 @@
       ]
    },
    "cButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "\\"
    },
    "cButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "÷"
    },
    "cButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "✓"
    },
    "cButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "\\"
+         },
+         {
+            "symbol": "÷"
+         },
+         {
+            "symbol": "✓"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "cButtonHintSymbolsSubclassStyle1",
-         "cButtonHintSymbolsSubclassStyle2",
-         "cButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "cButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "\\"
-      },
       "foregroundStyle": [
          "cButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "cButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "÷"
-      },
-      "foregroundStyle": [
-         "cButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "cButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "✓"
-      },
-      "foregroundStyle": [
+         "cButtonHintSymbolsForegroundStyle2",
          "cButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "cButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "复制"
    },
    "cButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "/"
    },
    "cButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "/"
    },
    "cButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -657,58 +589,39 @@
       "text": "C"
    },
    "candidateContextMenuStyle": [ ],
-   "candidateStateButton": {
-      "action": {
-         "shortcut": "#candidatesBarStateToggle"
-      },
-      "animation": [
-         "scaleAnimation"
-      ],
-      "backgroundStyle": "candidateStateButtonBackgroundStyle",
-      "foregroundStyle": [
-         "candidateStateButtonSeparatorForegroundStyle",
-         "candidateStateButtonForegroundStyle"
-      ],
-      "size": {
-         "width": 45
-      }
-   },
-   "candidateStateButtonBackgroundStyle": {
-      "buttonStyleType": "geometry",
-      "highlightColor": "00103412",
-      "normalColor": "57575701"
-   },
    "candidateStateButtonForegroundStyle": {
-      "buttonStyleType": "systemImage",
       "center": {
          "x": "0.5",
          "y": "0.56"
       },
       "fontSize": 18,
       "fontWeight": "regular",
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "chevron.down"
    },
    "candidateStateButtonSeparatorForegroundStyle": {
-      "buttonStyleType": "systemImage",
       "center": {
          "x": -0.01,
          "y": 0.56000000000000005
       },
       "fontSize": 33,
       "fontWeight": "ultraLight",
-      "highlightColor": "57575791",
-      "normalColor": "57575791",
+      "highlightColor": "fefefe66",
+      "normalColor": "fefefe66",
       "systemImageName": "poweron"
+   },
+   "candidateStateButtonStyle": {
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
+      "foregroundStyle": [
+         "candidateStateButtonSeparatorForegroundStyle",
+         "candidateStateButtonForegroundStyle"
+      ]
    },
    "dButton": {
       "action": {
          "character": "d"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "dButtonCapsLockedStateForegroundStyle",
@@ -719,7 +632,7 @@
          "dButtonUpForegroundStyle"
       ],
       "hintStyle": "dButtonHintStyle",
-      "hintSymbolsStyle": "dButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "dButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -737,9 +650,9 @@
       ]
    },
    "dButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -747,19 +660,18 @@
       "text": "D"
    },
    "dButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "D"
    },
    "dButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -770,133 +682,85 @@
       "foregroundStyle": [
          "dButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "dButtonSwipeUpHintForegroundStyle",
          "halfStyle"
       ]
    },
    "dButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "＃"
    },
    "dButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "·"
    },
    "dButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "•"
    },
    "dButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "＃"
+         },
+         {
+            "symbol": "·"
+         },
+         {
+            "symbol": "•"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "dButtonHintSymbolsSubclassStyle1",
-         "dButtonHintSymbolsSubclassStyle2",
-         "dButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "dButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "＃"
-      },
       "foregroundStyle": [
          "dButtonHintSymbolsForegroundStyle1",
-         "fullStyle"
-      ]
-   },
-   "dButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "·"
-      },
-      "foregroundStyle": [
-         "dButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "dButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "•"
-      },
-      "foregroundStyle": [
+         "dButtonHintSymbolsForegroundStyle2",
          "dButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "dButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "#"
    },
    "dButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "#"
    },
    "dButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
       "normalColor": "000000",
       "text": "D"
    },
-   "dismissKeyboardButton": {
-      "action": "dismissKeyboard",
-      "animation": [
-         "scaleAnimation"
-      ],
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
-      "foregroundStyle": [
-         "dismissKeyboardButtonForegroundStyle"
-      ],
-      "size": {
-         "width": "1/8"
-      }
-   },
-   "dismissKeyboardButtonForegroundStyle": {
-      "buttonStyleType": "systemImage",
-      "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
-      "systemImageName": "chevron.down"
-   },
    "eButton": {
       "action": {
          "character": "e"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "eButtonCapsLockedStateForegroundStyle",
@@ -907,7 +771,7 @@
          "eButtonUpForegroundStyle"
       ],
       "hintStyle": "eButtonHintStyle",
-      "hintSymbolsStyle": "eButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "eButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -925,9 +789,9 @@
       ]
    },
    "eButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -935,19 +799,18 @@
       "text": "E"
    },
    "eButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "E"
    },
    "eButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -967,89 +830,69 @@
       ]
    },
    "eButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "3"
    },
    "eButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "£"
    },
    "eButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "€"
    },
    "eButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "3"
+         },
+         {
+            "symbol": "£"
+         },
+         {
+            "symbol": "€"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "eButtonHintSymbolsSubclassStyle1",
-         "eButtonHintSymbolsSubclassStyle2",
-         "eButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "eButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "3"
-      },
       "foregroundStyle": [
-         "eButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "eButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "£"
-      },
-      "foregroundStyle": [
-         "eButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "eButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "€"
-      },
-      "foregroundStyle": [
+         "eButtonHintSymbolsForegroundStyle1",
+         "eButtonHintSymbolsForegroundStyle2",
          "eButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "eButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "3"
    },
    "eButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "3"
    },
    "eButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1058,9 +901,6 @@
    },
    "enterButton": {
       "action": "enter",
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": [
          {
             "conditionKey": "$returnKeyType",
@@ -1113,9 +953,6 @@
             "styleName": "blueButtonForegroundStyle"
          }
       ],
-      "notification": [
-         "enterPreeditStateStyleNotification"
-      ],
       "size": {
          "width": {
             "percentage": "0.215"
@@ -1126,34 +963,26 @@
       }
    },
    "enterButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "fontSize": 16,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "text": "$returnKeyType"
    },
    "enterButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
-   },
-   "enterPreeditStateStyleNotification": {
-      "backgroundStyle": "blueButtonBackgroundStyle",
-      "foregroundStyle": "blueButtonForegroundStyle",
-      "notificationType": "preeditChanged"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "fButton": {
       "action": {
          "character": "f"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "fButtonCapsLockedStateForegroundStyle",
@@ -1164,7 +993,7 @@
          "fButtonUpForegroundStyle"
       ],
       "hintStyle": "fButtonHintStyle",
-      "hintSymbolsStyle": "fButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "fButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -1182,9 +1011,9 @@
       ]
    },
    "fButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1192,19 +1021,18 @@
       "text": "F"
    },
    "fButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "F"
    },
    "fButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -1215,106 +1043,97 @@
       "foregroundStyle": [
          "fButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "fButtonSwipeUpHintForegroundStyle",
          "halfStyle"
       ]
    },
    "fButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "&"
    },
    "fButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "∞"
    },
    "fButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "π"
    },
    "fButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "&"
+         },
+         {
+            "symbol": "∞"
+         },
+         {
+            "symbol": "π"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "fButtonHintSymbolsSubclassStyle1",
-         "fButtonHintSymbolsSubclassStyle2",
-         "fButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "fButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "&"
-      },
       "foregroundStyle": [
          "fButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "fButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "∞"
-      },
-      "foregroundStyle": [
-         "fButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "fButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "π"
-      },
-      "foregroundStyle": [
+         "fButtonHintSymbolsForegroundStyle2",
          "fButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "fButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "*"
    },
    "fButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "*"
    },
    "fButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
       "normalColor": "000000",
       "text": "F"
    },
+   "foregroundAnimation": [
+      {
+         "duration": 40,
+         "fromScale": 1,
+         "repeatCount": 1,
+         "toScale": 0.87,
+         "type": "bounds"
+      },
+      {
+         "duration": 80,
+         "fromScale": 0.87,
+         "repeatCount": 1,
+         "toScale": 1,
+         "type": "bounds"
+      }
+   ],
    "fullStyle": {
       "buttonStyleType": "text",
       "center": {
@@ -1324,16 +1143,13 @@
       "fontSize": 10,
       "fontWeight": "light",
       "highlightColor": "feffff",
-      "normalColor": "57575791",
+      "normalColor": "fefefe66",
       "text": "全"
    },
    "gButton": {
       "action": {
          "character": "g"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "gButtonCapsLockedStateForegroundStyle",
@@ -1344,7 +1160,7 @@
          "gButtonUpForegroundStyle"
       ],
       "hintStyle": "gButtonHintStyle",
-      "hintSymbolsStyle": "gButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "gButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -1362,9 +1178,9 @@
       ]
    },
    "gButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1372,19 +1188,18 @@
       "text": "G"
    },
    "gButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "G"
    },
    "gButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -1395,100 +1210,75 @@
       "foregroundStyle": [
          "gButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "gButtonSwipeUpHintForegroundStyle",
          "fullStyle"
       ]
    },
    "gButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "!"
    },
    "gButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¡"
    },
    "gButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "﹏"
    },
    "gButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "!"
+         },
+         {
+            "symbol": "¡"
+         },
+         {
+            "symbol": "﹏"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "gButtonHintSymbolsSubclassStyle1",
-         "gButtonHintSymbolsSubclassStyle2",
-         "gButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "gButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "!"
-      },
       "foregroundStyle": [
          "gButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "gButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "¡"
-      },
-      "foregroundStyle": [
-         "gButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "gButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "﹏"
-      },
-      "foregroundStyle": [
+         "gButtonHintSymbolsForegroundStyle2",
          "gButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "gButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "！"
    },
    "gButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "！"
    },
    "gButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1499,9 +1289,6 @@
       "action": {
          "character": "h"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "hButtonCapsLockedStateForegroundStyle",
@@ -1512,7 +1299,7 @@
          "hButtonUpForegroundStyle"
       ],
       "hintStyle": "hButtonHintStyle",
-      "hintSymbolsStyle": "hButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "hButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -1530,9 +1317,9 @@
       ]
    },
    "hButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1540,19 +1327,18 @@
       "text": "H"
    },
    "hButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "H"
    },
    "hButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -1563,101 +1349,74 @@
       "foregroundStyle": [
          "hButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "hButtonSwipeUpHintForegroundStyle"
       ]
    },
    "hButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "{"
    },
    "hButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "["
    },
    "hButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "("
    },
    "hButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "{"
+         },
+         {
+            "symbol": "["
+         },
+         {
+            "symbol": "("
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "hButtonHintSymbolsSubclassStyle1",
-         "hButtonHintSymbolsSubclassStyle2",
-         "hButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "hButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "{"
-      },
       "foregroundStyle": [
          "hButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "hButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "["
-      },
-      "foregroundStyle": [
          "hButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "hButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "("
-      },
-      "foregroundStyle": [
-         "hButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+         "hButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "hButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "「"
    },
    "hButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "「"
    },
    "hButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1673,11 +1432,10 @@
       "fontSize": 10,
       "fontWeight": "light",
       "highlightColor": "feffff",
-      "normalColor": "57575791",
+      "normalColor": "fefefe66",
       "text": "半"
    },
    "hintBackgroundStyle": {
-      "buttonStyleType": "fileImage",
       "contentMode": "scaleAspectFill",
       "normalImage": {
          "file": "hint",
@@ -1686,20 +1444,20 @@
    },
    "hintSymbolsBackgroundStyle": {
       "borderSize": 1,
-      "buttonStyleType": "geometry",
       "cornerRadius": 7,
-      "normalBorderColor": "d2d2d3e6",
-      "normalColor": "FCFCFE",
-      "normalShadowColor": "797B7E",
+      "normalBorderColor": "6E6E6E4D",
+      "normalColor": "78797AFC",
+      "normalShadowColor": "00000050",
+      "shadowColor": "797B7E",
       "shadowOffset": {
          "x": 0,
          "y": 3
       },
-      "shadowOpacity": 0.80000000000000004,
-      "shadowRadius": 3
+      "shadowRadius": 3,
+      "type": "original"
    },
    "hintSymbolsSelectedBackgroundStyle": {
-      "buttonStyleType": "geometry",
+      "borderSize": 1,
       "cornerRadius": 7,
       "highlightColor": "23c891",
       "insets": {
@@ -1708,156 +1466,37 @@
          "right": 3,
          "top": 3
       },
-      "normalColor": "23c891"
+      "normalColor": "23c891",
+      "shadowOffset": {
+         "x": 0,
+         "y": 3
+      },
+      "shadowRadius": 3,
+      "type": "original"
    },
-   "horizontalCandidateCellStyle": {
-      "commentColor": "505050ff",
+   "horizontalCandidateStyle": {
+      "candidateStateButtonStyle": "candidateStateButtonStyle",
+      "commentColor": "cfcfcf",
       "commentFontSize": 16,
       "commentFontWeight": "light",
-      "highlightBackgroundColor": "FCFFFFE0",
-      "indexColor": "5f5f5fff",
+      "highlightBackgroundColor": "d1d1d165",
+      "indexColor": "5c5c5c",
       "indexFontSize": 16,
       "indexFontWeight": "light",
-      "preferredBackgroundColor": "FCFFFFE0",
-      "preferredCommentColor": "505050ff",
-      "preferredIndexColor": "5f5f5fff",
-      "preferredTextColor": "00B552FF",
-      "textColor": "303030ff",
+      "insets": { },
+      "itemSpacing": { },
+      "preferredBackgroundColor": "d1d1d165",
+      "preferredCommentColor": "dfdfdf",
+      "preferredIndexColor": "dfdfdfff",
+      "preferredTextColor": "00E582ff",
+      "textColor": "dfdfdf",
       "textFontSize": 20,
       "textFontWeight": "regular"
    },
-   "horizontalCandidatesCollection": {
-      "candidateStyle": "horizontalCandidateCellStyle",
-      "insets": {
-         "bottom": 0,
-         "left": 2,
-         "right": 2,
-         "top": 8
-      },
-      "maxColumns": 8,
-      "size": {
-         "width": "available"
-      },
-      "type": "horizontalCandidates"
-   },
-   "horizontalCandidatesLayout": [
-      {
-         "HStack": {
-            "subviews": [
-               {
-                  "Cell": "horizontalCandidatesCollection"
-               },
-               {
-                  "Cell": "candidateStateButton"
-               }
-            ]
-         }
-      }
-   ],
-   "horizontalCandidatesStyle": {
-      "backgroundStyle": "toolbarBackgroundStyle"
-   },
-   "horizontalPlaceholderButton": {
-      "action": "none",
-      "size": {
-         "width": "1/8"
-      }
-   },
-   "horizontalSymbolsCollection": {
-      "animation": [
-         "scaleAnimation"
-      ],
-      "contentRightToLeft": false,
-      "dataSource": "horizontalSymbolsDataSource",
-      "insets": {
-         "left": 1,
-         "right": 1
-      },
-      "maxColumns": 5,
-      "size": {
-         "width": "available"
-      },
-      "type": "horizontalSymbols"
-   },
-   "horizontalSymbolsDataSource": [
-      {
-         "action": {
-            "floatKeyboardType": "appURL"
-         },
-         "label": 3,
-         "styleName": "toolbarButtonStyle3"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#showPhraseView"
-         },
-         "label": 4,
-         "styleName": "toolbarButtonStyle4"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#showPasteboardView"
-         },
-         "label": 5,
-         "styleName": "toolbarButtonStyle5"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#toggleScriptView"
-         },
-         "label": 6,
-         "styleName": "toolbarButtonStyle6"
-      },
-      {
-         "action": {
-            "keyboardType": "emojis"
-         },
-         "label": 7,
-         "styleName": "toolbarButtonStyle7"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#右手模式"
-         },
-         "label": 8,
-         "styleName": "toolbarButtonStyle8"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#左手模式"
-         },
-         "label": 9,
-         "styleName": "toolbarButtonStyle9"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#RimeSwitcher"
-         },
-         "label": 10,
-         "styleName": "toolbarButtonStyle10"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#简繁切换"
-         },
-         "label": 11,
-         "styleName": "toolbarButtonStyle11"
-      },
-      {
-         "action": {
-            "shortcutCommand": "#中英切换"
-         },
-         "label": 12,
-         "styleName": "toolbarButtonStyle12"
-      }
-   ],
    "iButton": {
       "action": {
          "character": "i"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "iButtonCapsLockedStateForegroundStyle",
@@ -1868,7 +1507,7 @@
          "iButtonUpForegroundStyle"
       ],
       "hintStyle": "iButtonHintStyle",
-      "hintSymbolsStyle": "iButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "iButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -1886,9 +1525,9 @@
       ]
    },
    "iButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -1896,19 +1535,18 @@
       "text": "I"
    },
    "iButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "I"
    },
    "iButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -1928,90 +1566,69 @@
       ]
    },
    "iButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "8"
    },
    "iButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "》"
    },
    "iButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ">"
    },
    "iButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "8"
+         },
+         {
+            "symbol": "》"
+         },
+         {
+            "symbol": ">"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
+      "foregroundStyle": [
+         "iButtonHintSymbolsForegroundStyle1",
+         "iButtonHintSymbolsForegroundStyle2",
+         "iButtonHintSymbolsForegroundStyle3"
+      ],
       "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
       "selectedIndex": 2,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "iButtonHintSymbolsSubclassStyle1",
-         "iButtonHintSymbolsSubclassStyle2",
-         "iButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "iButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "8"
-      },
-      "foregroundStyle": [
-         "iButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "iButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "》"
-      },
-      "foregroundStyle": [
-         "iButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "iButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": ">"
-      },
-      "foregroundStyle": [
-         "iButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "iButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "8"
    },
    "iButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "8"
    },
    "iButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2022,9 +1639,6 @@
       "action": {
          "character": "j"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "jButtonCapsLockedStateForegroundStyle",
@@ -2035,7 +1649,7 @@
          "jButtonUpForegroundStyle"
       ],
       "hintStyle": "jButtonHintStyle",
-      "hintSymbolsStyle": "jButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "jButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -2053,9 +1667,9 @@
       ]
    },
    "jButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2063,19 +1677,18 @@
       "text": "J"
    },
    "jButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "J"
    },
    "jButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -2086,102 +1699,75 @@
       "foregroundStyle": [
          "jButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "jButtonSwipeUpHintForegroundStyle"
       ]
    },
    "jButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "}"
    },
    "jButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "]"
    },
    "jButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ")"
    },
    "jButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "}"
+         },
+         {
+            "symbol": "]"
+         },
+         {
+            "symbol": ")"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "jButtonHintSymbolsSubclassStyle1",
-         "jButtonHintSymbolsSubclassStyle2",
-         "jButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "jButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "}"
-      },
       "foregroundStyle": [
          "jButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "jButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "]"
-      },
-      "foregroundStyle": [
          "jButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "jButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": ")"
-      },
-      "foregroundStyle": [
-         "jButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+         "jButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "jButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
          "x": 0.55000000000000004,
-         "y": 0.16
+         "y": 0.45999999999999996
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "」"
    },
    "jButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.80000000000000004,
-         "y": 0.23000000000000001
+         "y": 0.53000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "」"
    },
    "jButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2192,9 +1778,6 @@
       "action": {
          "character": "k"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "kButtonCapsLockedStateForegroundStyle",
@@ -2205,7 +1788,7 @@
          "kButtonUpForegroundStyle"
       ],
       "hintStyle": "kButtonHintStyle",
-      "hintSymbolsStyle": "kButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "kButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -2223,9 +1806,9 @@
       ]
    },
    "kButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2233,19 +1816,18 @@
       "text": "K"
    },
    "kButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "K"
    },
    "kButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -2256,100 +1838,74 @@
       "foregroundStyle": [
          "kButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "kButtonSwipeUpHintForegroundStyle"
       ]
    },
    "kButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "'"
    },
    "kButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "‘"
    },
    "kButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "\""
    },
    "kButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "'"
+         },
+         {
+            "character": "‘"
+         },
+         {
+            "symbol": "\""
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "kButtonHintSymbolsSubclassStyle1",
-         "kButtonHintSymbolsSubclassStyle2",
-         "kButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "kButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "'"
-      },
       "foregroundStyle": [
          "kButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "kButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "character": "‘"
-      },
-      "foregroundStyle": [
-         "kButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "kButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "\""
-      },
-      "foregroundStyle": [
-         "kButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+         "kButtonHintSymbolsForegroundStyle2",
+         "kButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "kButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "“"
    },
    "kButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "“"
    },
    "kButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2357,8 +1913,8 @@
       "text": "K"
    },
    "keyboardBackgroundStyle": {
-      "buttonStyleType": "geometry",
-      "normalColor": "312C2D01"
+      "normalColor": "2d2c3101",
+      "type": "original"
    },
    "keyboardHeight": 216,
    "keyboardLayout": [
@@ -2493,9 +2049,6 @@
       "action": {
          "character": "l"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "bounds": {
          "alignment": "left",
@@ -2510,7 +2063,7 @@
          "lButtonUpForegroundStyle"
       ],
       "hintStyle": "lButtonHintStyle",
-      "hintSymbolsStyle": "lButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "lButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.15"
@@ -2528,9 +2081,9 @@
       ]
    },
    "lButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2538,19 +2091,18 @@
       "text": "L"
    },
    "lButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "L"
    },
    "lButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -2561,100 +2113,74 @@
       "foregroundStyle": [
          "lButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeUpForegroundStyle": [
          "lButtonSwipeUpHintForegroundStyle"
       ]
    },
    "lButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "'"
    },
    "lButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "’"
    },
    "lButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "\""
    },
    "lButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "'"
+         },
+         {
+            "character": "’"
+         },
+         {
+            "symbol": "\""
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "lButtonHintSymbolsSubclassStyle1",
-         "lButtonHintSymbolsSubclassStyle2",
-         "lButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "lButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "'"
-      },
       "foregroundStyle": [
          "lButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "lButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "character": "’"
-      },
-      "foregroundStyle": [
-         "lButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "lButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "\""
-      },
-      "foregroundStyle": [
-         "lButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+         "lButtonHintSymbolsForegroundStyle2",
+         "lButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "lButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "”"
    },
    "lButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "”"
    },
    "lButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2665,9 +2191,6 @@
       "action": {
          "character": "m"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "mButtonCapsLockedStateForegroundStyle",
@@ -2680,7 +2203,7 @@
          "mButtonDownForegroundStyle"
       ],
       "hintStyle": "mButtonHintStyle",
-      "hintSymbolsStyle": "mButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "mButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -2702,9 +2225,9 @@
       ]
    },
    "mButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2712,30 +2235,29 @@
       "text": "M"
    },
    "mButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.right.to.line"
    },
    "mButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "M"
    },
    "mButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -2746,10 +2268,6 @@
       "foregroundStyle": [
          "mButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "mButtonSwipeDownHintForegroundStyle"
       ],
@@ -2759,99 +2277,77 @@
       ]
    },
    "mButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "…"
    },
    "mButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "⋯"
    },
    "mButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ";"
    },
    "mButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "…"
+         },
+         {
+            "symbol": "⋯"
+         },
+         {
+            "symbol": ";"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
+      "foregroundStyle": [
+         "mButtonHintSymbolsForegroundStyle1",
+         "mButtonHintSymbolsForegroundStyle2",
+         "mButtonHintSymbolsForegroundStyle3"
+      ],
       "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
       "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "mButtonHintSymbolsSubclassStyle1",
-         "mButtonHintSymbolsSubclassStyle2",
-         "mButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "mButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "…"
-      },
-      "foregroundStyle": [
-         "mButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "mButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "⋯"
-      },
-      "foregroundStyle": [
-         "mButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "mButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": ";"
-      },
-      "foregroundStyle": [
-         "mButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "mButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "行尾"
    },
    "mButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "；"
    },
    "mButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "；"
    },
    "mButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2862,9 +2358,6 @@
       "action": {
          "character": "n"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "nButtonCapsLockedStateForegroundStyle",
@@ -2877,7 +2370,7 @@
          "nButtonDownForegroundStyle"
       ],
       "hintStyle": "nButtonHintStyle",
-      "hintSymbolsStyle": "nButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "nButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -2899,9 +2392,9 @@
       ]
    },
    "nButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -2909,30 +2402,29 @@
       "text": "N"
    },
    "nButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.left.to.line"
    },
    "nButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "N"
    },
    "nButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -2943,10 +2435,6 @@
       "foregroundStyle": [
          "nButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "nButtonSwipeDownHintForegroundStyle"
       ],
@@ -2956,100 +2444,77 @@
       ]
    },
    "nButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "."
    },
    "nButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "。"
    },
    "nButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ":"
    },
    "nButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "."
+         },
+         {
+            "symbol": "。"
+         },
+         {
+            "symbol": ":"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "nButtonHintSymbolsSubclassStyle1",
-         "nButtonHintSymbolsSubclassStyle2",
-         "nButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "nButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "."
-      },
       "foregroundStyle": [
          "nButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "nButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "。"
-      },
-      "foregroundStyle": [
-         "nButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "nButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": ":"
-      },
-      "foregroundStyle": [
-         "nButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+         "nButtonHintSymbolsForegroundStyle2",
+         "nButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "nButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "行首"
    },
    "nButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "："
    },
    "nButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "："
    },
    "nButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3060,9 +2525,6 @@
       "action": {
          "character": "o"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "oButtonCapsLockedStateForegroundStyle",
@@ -3073,7 +2535,7 @@
          "oButtonUpForegroundStyle"
       ],
       "hintStyle": "oButtonHintStyle",
-      "hintSymbolsStyle": "oButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "oButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -3091,9 +2553,9 @@
       ]
    },
    "oButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3101,19 +2563,18 @@
       "text": "O"
    },
    "oButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "O"
    },
    "oButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -3133,90 +2594,69 @@
       ]
    },
    "oButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "9"
    },
    "oButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "【"
    },
    "oButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "（"
    },
    "oButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "9"
+         },
+         {
+            "symbol": "【"
+         },
+         {
+            "symbol": "（"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
+      "foregroundStyle": [
+         "oButtonHintSymbolsForegroundStyle1",
+         "oButtonHintSymbolsForegroundStyle2",
+         "oButtonHintSymbolsForegroundStyle3"
+      ],
       "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
       "selectedIndex": 2,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "oButtonHintSymbolsSubclassStyle1",
-         "oButtonHintSymbolsSubclassStyle2",
-         "oButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "oButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "9"
-      },
-      "foregroundStyle": [
-         "oButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "oButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "【"
-      },
-      "foregroundStyle": [
-         "oButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "oButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "（"
-      },
-      "foregroundStyle": [
-         "oButtonHintSymbolsForegroundStyle3",
-         "fullStyle"
-      ]
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "oButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "9"
    },
    "oButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "9"
    },
    "oButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3227,14 +2667,11 @@
       "action": {
          "keyboardType": "numeric_26"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "systemButtonBackgroundStyle",
       "foregroundStyle": [
          "ottButtonForegroundStyle"
       ],
-      "hintSymbolsStyle": "ottButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "ottButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.2"
@@ -3248,83 +2685,77 @@
       }
    },
    "ottButtonDownForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "ottButtonForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "fontSize": 16,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "textformat.123"
    },
    "ottButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "符号"
    },
    "ottButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "表情"
    },
    "ottButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "action": {
+               "keyboardType": "symbolic"
+            },
+            "label": {
+               "text": "符号"
+            }
+         },
+         {
+            "action": {
+               "keyboardType": "emojis"
+            },
+            "label": {
+               "text": "表情"
+            }
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "ottButtonHintSymbolsSubclassStyle1",
-         "ottButtonHintSymbolsSubclassStyle2"
-      ]
-   },
-   "ottButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "keyboardType": "symbolic"
-      },
       "foregroundStyle": [
-         "ottButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "ottButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "keyboardType": "emojis"
-      },
-      "foregroundStyle": [
+         "ottButtonHintSymbolsForegroundStyle1",
          "ottButtonHintSymbolsForegroundStyle2"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "ottButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "pButton": {
       "action": {
          "character": "p"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "pButtonCapsLockedStateForegroundStyle",
@@ -3335,7 +2766,7 @@
          "pButtonUpForegroundStyle"
       ],
       "hintStyle": "pButtonHintStyle",
-      "hintSymbolsStyle": "pButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "pButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -3353,9 +2784,9 @@
       ]
    },
    "pButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3363,19 +2794,18 @@
       "text": "P"
    },
    "pButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "P"
    },
    "pButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -3395,155 +2825,96 @@
       ]
    },
    "pButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "0"
    },
    "pButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "】"
    },
    "pButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "）"
    },
    "pButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "0"
+         },
+         {
+            "symbol": "】"
+         },
+         {
+            "symbol": "）"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
+      "foregroundStyle": [
+         "pButtonHintSymbolsForegroundStyle1",
+         "pButtonHintSymbolsForegroundStyle2",
+         "pButtonHintSymbolsForegroundStyle3"
+      ],
       "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
       "selectedIndex": 2,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "pButtonHintSymbolsSubclassStyle1",
-         "pButtonHintSymbolsSubclassStyle2",
-         "pButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "pButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "0"
-      },
-      "foregroundStyle": [
-         "pButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "pButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "】"
-      },
-      "foregroundStyle": [
-         "pButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "pButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "）"
-      },
-      "foregroundStyle": [
-         "pButtonHintSymbolsForegroundStyle3",
-         "fullStyle"
-      ]
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "pButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "0"
    },
    "pButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "0"
    },
    "pButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
       "normalColor": "000000",
       "text": "P"
    },
-   "preeditForegroundStyle": {
-      "buttonStyleType": "text",
-      "fontSize": 13,
-      "normalColor": "000000"
-   },
-   "preeditHeight": 15,
-   "preeditStyle": {
+   "preedit": {
       "backgroundStyle": "preeditBackgroundStyle",
       "foregroundStyle": "preeditForegroundStyle",
       "insets": {
          "left": 6
       },
       "preeditBackgroundStyle": {
-         "buttonStyleType": "geometry",
-         "normalColor": "312C2D01"
+         "normalColor": "2d2c3101",
+         "type": "original"
       }
    },
-   "primaryButton": {
-      "action": {
-         "floatKeyboardType": "panel"
-      },
-      "animation": [
-         "scaleAnimation"
-      ],
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
-      "foregroundStyle": [
-         "primaryButtonForegroundStyle"
-      ],
-      "size": {
-         "width": "1/8"
-      }
+   "preeditForegroundStyle": {
+      "buttonStyleType": "text",
+      "fontSize": 13,
+      "normalColor": "feffff"
    },
-   "primaryButtonForegroundStyle": {
-      "buttonStyleType": "fileImage",
-      "center": {
-         "y": 0.48999999999999999
-      },
-      "highlightImage": {
-         "file": "logo",
-         "image": "IMG1"
-      },
-      "insets": {
-         "bottom": 3,
-         "left": 5,
-         "right": 5,
-         "top": 3
-      },
-      "normalImage": {
-         "file": "logo",
-         "image": "IMG1"
-      }
-   },
+   "preeditHeight": 15,
    "qButton": {
       "action": {
          "character": "q"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "qButtonCapsLockedStateForegroundStyle",
@@ -3554,7 +2925,7 @@
          "qButtonUpForegroundStyle"
       ],
       "hintStyle": "qButtonHintStyle",
-      "hintSymbolsStyle": "qButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "qButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -3572,9 +2943,9 @@
       ]
    },
    "qButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3582,19 +2953,18 @@
       "text": "Q"
    },
    "qButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "Q"
    },
    "qButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -3614,90 +2984,69 @@
       ]
    },
    "qButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "1"
    },
    "qButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "|"
    },
    "qButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¦"
    },
    "qButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "1"
+         },
+         {
+            "symbol": "|"
+         },
+         {
+            "symbol": "¦"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "qButtonHintSymbolsSubclassStyle1",
-         "qButtonHintSymbolsSubclassStyle2",
-         "qButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "qButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "1"
-      },
       "foregroundStyle": [
-         "qButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "qButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "|"
-      },
-      "foregroundStyle": [
+         "qButtonHintSymbolsForegroundStyle1",
          "qButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "qButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "¦"
-      },
-      "foregroundStyle": [
          "qButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "qButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "1"
    },
    "qButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "1"
    },
    "qButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3708,9 +3057,6 @@
       "action": {
          "character": "r"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "rButtonCapsLockedStateForegroundStyle",
@@ -3721,7 +3067,7 @@
          "rButtonUpForegroundStyle"
       ],
       "hintStyle": "rButtonHintStyle",
-      "hintSymbolsStyle": "rButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "rButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -3739,9 +3085,9 @@
       ]
    },
    "rButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3749,19 +3095,18 @@
       "text": "R"
    },
    "rButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "R"
    },
    "rButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -3781,126 +3126,79 @@
       ]
    },
    "rButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "2"
    },
    "rButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "$"
    },
    "rButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¥"
    },
    "rButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "2"
+         },
+         {
+            "symbol": "$"
+         },
+         {
+            "symbol": "¥"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "rButtonHintSymbolsSubclassStyle1",
-         "rButtonHintSymbolsSubclassStyle2",
-         "rButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "rButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "2"
-      },
       "foregroundStyle": [
-         "rButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "rButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "$"
-      },
-      "foregroundStyle": [
+         "rButtonHintSymbolsForegroundStyle1",
          "rButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "rButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "¥"
-      },
-      "foregroundStyle": [
          "rButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "rButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "4"
    },
    "rButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "4"
    },
    "rButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
       "normalColor": "000000",
       "text": "R"
    },
-   "returnPrimaryKeyboardButton": {
-      "action": {
-         "shortcut": "#candidatesBarStateToggle"
-      },
-      "animation": [
-         "scaleAnimation"
-      ],
-      "backgroundStyle": "candidateStateButtonBackgroundStyle",
-      "foregroundStyle": [
-         "returnPrimaryKeyboardButtonForegroundStyle"
-      ],
-      "size": {
-         "height": 45
-      }
-   },
-   "returnPrimaryKeyboardButtonForegroundStyle": {
-      "buttonStyleType": "systemImage",
-      "fontSize": 18,
-      "fontWeight": "regular",
-      "highlightColor": "000000",
-      "normalColor": "000000",
-      "systemImageName": "chevron.up"
-   },
    "sButton": {
       "action": {
          "character": "s"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "sButtonCapsLockedStateForegroundStyle",
@@ -3913,14 +3211,14 @@
          "sButtonDownForegroundStyle"
       ],
       "hintStyle": "sButtonHintStyle",
-      "hintSymbolsStyle": "sButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "sButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
          }
       },
       "swipeDownAction": {
-         "shortcut": "#redo"
+         "shortcutCommand": "#重做"
       },
       "swipeUpAction": {
          "character": "@"
@@ -3935,9 +3233,9 @@
       ]
    },
    "sButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -3945,30 +3243,29 @@
       "text": "S"
    },
    "sButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.turn.up.right"
    },
    "sButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "S"
    },
    "sButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -3979,10 +3276,6 @@
       "foregroundStyle": [
          "sButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "sButtonSwipeDownHintForegroundStyle"
       ],
@@ -3992,116 +3285,85 @@
       ]
    },
    "sButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˊ"
    },
    "sButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˇ"
    },
    "sButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˋ"
    },
    "sButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "ˊ"
+         },
+         {
+            "symbol": "ˇ"
+         },
+         {
+            "symbol": "ˋ"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "sButtonHintSymbolsSubclassStyle1",
-         "sButtonHintSymbolsSubclassStyle2",
-         "sButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "sButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "ˊ"
-      },
       "foregroundStyle": [
-         "sButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "sButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "ˇ"
-      },
-      "foregroundStyle": [
-         "sButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "sButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "ˋ"
-      },
-      "foregroundStyle": [
+         "sButtonHintSymbolsForegroundStyle1",
+         "sButtonHintSymbolsForegroundStyle2",
          "sButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "sButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "重做"
    },
    "sButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "@"
    },
    "sButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "@"
    },
    "sButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
       "normalColor": "000000",
       "text": "S"
    },
-   "scaleAnimation": {
-      "animationType": "scale",
-      "isAutoReverse": true,
-      "pressDuration": 40,
-      "releaseDuration": 80,
-      "scale": 0.87
-   },
    "shiftButton": {
       "action": "shift",
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "systemButtonBackgroundStyle",
       "bounds": {
          "alignment": "left",
@@ -4113,7 +3375,7 @@
       "foregroundStyle": [
          "shiftButtonForegroundStyle"
       ],
-      "hintSymbolsStyle": "shiftButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "shiftButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.15"
@@ -4128,104 +3390,94 @@
       ]
    },
    "shiftButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "fontSize": 20,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "capslock.fill"
    },
    "shiftButtonDownForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "shiftButtonForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "fontSize": 20,
-      "highlightColor": "000000",
-      "highlightSystemImageName": "shift.fill",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "shift"
    },
    "shiftButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "选单"
    },
    "shiftButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "方案"
    },
    "shiftButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "action": {
+               "shortcut": "#RimeSwitcher"
+            },
+            "label": {
+               "text": "选单"
+            }
+         },
+         {
+            "action": {
+               "shortcut": "#方案切换"
+            },
+            "label": {
+               "text": "方案"
+            }
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "shiftButtonHintSymbolsSubclassStyle1",
-         "shiftButtonHintSymbolsSubclassStyle2"
-      ]
-   },
-   "shiftButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "shortcut": "#RimeSwitcher"
-      },
       "foregroundStyle": [
-         "shiftButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "shiftButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "shortcut": "#方案切换"
-      },
-      "foregroundStyle": [
+         "shiftButtonHintSymbolsForegroundStyle1",
          "shiftButtonHintSymbolsForegroundStyle2"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "shiftButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "shiftButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "fontSize": 20,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "shift.fill"
    },
    "spaceButton": {
       "action": "space",
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "foregroundStyle": [
          "spaceButtonForegroundStyle",
          "spaceButtonUpForegroundStyle",
          "spaceButtonDownForegroundStyle"
-      ],
-      "notification": [
-         "spacePreeditStateStyleNotification"
       ],
       "size": {
          "width": "available"
@@ -4236,63 +3488,65 @@
       }
    },
    "spaceButtonDownForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "spaceButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": " "
    },
    "spaceButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "systemButtonBackgroundStyle": {
-      "buttonStyleType": "geometry",
+      "borderSize": 1,
       "cornerRadius": 7,
-      "highlightColor": "feffff",
-      "highlightLowerEdgeColor": "0000004D",
+      "highlightColor": "d1d1d165",
+      "highlightLowerEdgeColor": "00000080",
       "insets": {
          "bottom": 5,
          "left": 3,
          "right": 3,
          "top": 7
       },
-      "normalColor": "00103429",
-      "normalLowerEdgeColor": "0000004D"
+      "normalColor": "ffffff19",
+      "normalLowerEdgeColor": "00000080",
+      "shadowOffset": {
+         "x": 0,
+         "y": 3
+      },
+      "shadowRadius": 3,
+      "type": "original"
    },
    "systemButtonForegroundStyle": {
-      "buttonStyleType": "text",
       "fontSize": 16,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "text": "$returnKeyType"
    },
    "tButton": {
       "action": {
          "character": "t"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "tButtonCapsLockedStateForegroundStyle",
@@ -4303,7 +3557,7 @@
          "tButtonUpForegroundStyle"
       ],
       "hintStyle": "tButtonHintStyle",
-      "hintSymbolsStyle": "tButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "tButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -4321,9 +3575,9 @@
       ]
    },
    "tButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -4331,19 +3585,18 @@
       "text": "T"
    },
    "tButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "T"
    },
    "tButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -4363,90 +3616,69 @@
       ]
    },
    "tButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "5"
    },
    "tButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "="
    },
    "tButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "≠"
    },
    "tButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "5"
+         },
+         {
+            "character": "="
+         },
+         {
+            "symbol": "≠"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "tButtonHintSymbolsSubclassStyle1",
-         "tButtonHintSymbolsSubclassStyle2",
-         "tButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "tButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "5"
-      },
       "foregroundStyle": [
-         "tButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "tButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "character": "="
-      },
-      "foregroundStyle": [
+         "tButtonHintSymbolsForegroundStyle1",
          "tButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "tButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "≠"
-      },
-      "foregroundStyle": [
          "tButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "tButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "5"
    },
    "tButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "5"
    },
    "tButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -4457,9 +3689,6 @@
       "action": {
          "character": "，"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "foregroundStyle": [
          "toggle_LButtonForegroundStyle",
@@ -4475,42 +3704,31 @@
       }
    },
    "toggle_LButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.66000000000000003,
-         "y": 0.52000000000000002
-      },
-      "dark": {
-         "highlightColor": "ffffff",
-         "normalColor": "feffff"
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "light": {
-         "highlightColor": "000000",
-         "normalColor": "000000"
-      },
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "，"
    },
    "toggle_LButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.58999999999999997,
          "y": 0.29999999999999999
       },
       "fontSize": 14,
-      "highlightColor": "575757",
-      "normalColor": "575757e6",
+      "highlightColor": "ffffff",
+      "normalColor": "ffffff65",
       "text": "。"
    },
    "toggle_RButton": {
       "action": {
          "keyboardType": "alphabetic"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "foregroundStyle": [
          "toggle_RButtonForegroundStyle"
@@ -4522,197 +3740,194 @@
       }
    },
    "toggle_RButtonForegroundStyle": {
+      "animation": "foregroundAnimation",
       "assetImageName": "chineseState",
-      "buttonStyleType": "assetImage",
       "center": {
          "y": 0.52000000000000002
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000"
+      "normalColor": "feffff"
+   },
+   "toolbar": {
+      "backgroundStyle": "toolbarBackgroundStyle",
+      "candidateContextMenu": "candidateContextMenuStyle",
+      "horizontalCandidateStyle": "horizontalCandidateStyle",
+      "primaryButtonStyle": "toolbarButtonStyle1",
+      "secondaryButtonStyle": [
+         "toolbarButtonStyle2",
+         "toolbarButtonStyle3",
+         "toolbarButtonStyle4",
+         "toolbarButtonStyle5",
+         "toolbarButtonStyle6",
+         "toolbarButtonStyle7",
+         "toolbarButtonStyle8"
+      ],
+      "verticalCandidateStyle": "verticalCandidateStyle"
    },
    "toolbarBackgroundStyle": {
       "toolbarBackgroundStyle": {
-         "buttonStyleType": "geometry",
-         "normalColor": "312C2D01"
+         "normalColor": "2d2c3101",
+         "type": "original"
       }
    },
-   "toolbarButtonForegroundStyle10": {
-      "buttonStyleType": "systemImage",
-      "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
-      "systemImageName": "switch.2"
+   "toolbarButtonBackgroundStyle": {
+      "normalColor": "00000001",
+      "type": "original"
    },
-   "toolbarButtonForegroundStyle11": {
-      "buttonStyleType": "text",
+   "toolbarButtonForegroundStyle1": {
       "center": {
          "y": 0.48999999999999999
       },
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
-      "text": "简"
-   },
-   "toolbarButtonForegroundStyle12": {
-      "buttonStyleType": "text",
-      "center": {
-         "y": 0.48999999999999999
+      "highlightColor": "00E582",
+      "highlightImage": {
+         "file": "logo",
+         "image": "IMG1"
       },
+      "insets": {
+         "bottom": 3,
+         "left": 5,
+         "right": 5,
+         "top": 3
+      },
+      "normalColor": "feffffcc",
+      "normalImage": {
+         "file": "logo",
+         "image": "IMG1"
+      }
+   },
+   "toolbarButtonForegroundStyle2": {
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
-      "text": "中"
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
+      "systemImageName": "chevron.down"
    },
    "toolbarButtonForegroundStyle3": {
-      "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "link"
    },
    "toolbarButtonForegroundStyle4": {
-      "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "highlightSystemImageName": "cube.fill",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "cube"
    },
    "toolbarButtonForegroundStyle5": {
-      "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "clipboard"
    },
    "toolbarButtonForegroundStyle6": {
-      "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "function"
    },
    "toolbarButtonForegroundStyle7": {
-      "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "highlightSystemImageName": "pawprint.fill",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "pawprint"
    },
    "toolbarButtonForegroundStyle8": {
-      "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "keyboard.onehanded.right"
    },
-   "toolbarButtonForegroundStyle9": {
-      "buttonStyleType": "systemImage",
-      "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
-      "systemImageName": "keyboard.onehanded.left"
-   },
    "toolbarButtonRealBackgroundStyle": {
-      "buttonStyleType": "systemImage",
       "fontSize": 45,
-      "highlightColor": "00103429",
-      "normalColor": "feffff",
+      "highlightColor": "d1d1d165",
+      "normalColor": "ffffff19",
       "systemImageName": "circlebadge.fill"
    },
-   "toolbarButtonStyle10": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+   "toolbarButtonStyle1": {
+      "action": {
+         "floatKeyboardType": "panel"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
-         "toolbarButtonForegroundStyle10"
+         "toolbarButtonRealBackgroundStyle",
+         "toolbarButtonForegroundStyle1"
       ]
    },
-   "toolbarButtonStyle11": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+   "toolbarButtonStyle2": {
+      "action": "dismissKeyboard",
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
-         "toolbarButtonForegroundStyle11"
-      ]
-   },
-   "toolbarButtonStyle12": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
-      "foregroundStyle": [
-         "toolbarButtonForegroundStyle12"
+         "toolbarButtonRealBackgroundStyle",
+         "toolbarButtonForegroundStyle2"
       ]
    },
    "toolbarButtonStyle3": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+      "action": {
+         "floatKeyboardType": "appURL"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
+         "toolbarButtonRealBackgroundStyle",
          "toolbarButtonForegroundStyle3"
       ]
    },
    "toolbarButtonStyle4": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+      "action": {
+         "shortcutCommand": "#showPhraseView"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
+         "toolbarButtonRealBackgroundStyle",
          "toolbarButtonForegroundStyle4"
       ]
    },
    "toolbarButtonStyle5": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+      "action": {
+         "shortcutCommand": "#showPasteboardView"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
+         "toolbarButtonRealBackgroundStyle",
          "toolbarButtonForegroundStyle5"
       ]
    },
    "toolbarButtonStyle6": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+      "action": {
+         "shortcutCommand": "#toggleScriptView"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
+         "toolbarButtonRealBackgroundStyle",
          "toolbarButtonForegroundStyle6"
       ]
    },
    "toolbarButtonStyle7": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+      "action": {
+         "keyboardType": "emojis"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
+         "toolbarButtonRealBackgroundStyle",
          "toolbarButtonForegroundStyle7"
       ]
    },
    "toolbarButtonStyle8": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
+      "action": {
+         "shortcutCommand": "#右手模式"
+      },
+      "backgroundStyle": "toolbarButtonBackgroundStyle",
       "foregroundStyle": [
+         "toolbarButtonRealBackgroundStyle",
          "toolbarButtonForegroundStyle8"
       ]
    },
-   "toolbarButtonStyle9": {
-      "backgroundStyle": "toolbarButtonRealBackgroundStyle",
-      "foregroundStyle": [
-         "toolbarButtonForegroundStyle9"
-      ]
-   },
    "toolbarHeight": 45,
-   "toolbarLayout": [
-      {
-         "HStack": {
-            "subviews": [
-               {
-                  "Cell": "primaryButton"
-               },
-               {
-                  "Cell": "horizontalPlaceholderButton"
-               },
-               {
-                  "Cell": "horizontalSymbolsCollection"
-               },
-               {
-                  "Cell": "dismissKeyboardButton"
-               }
-            ]
-         }
-      }
-   ],
-   "toolbarStyle": {
-      "backgroundStyle": "toolbarBackgroundStyle"
-   },
    "uButton": {
       "action": {
          "character": "u"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "uButtonCapsLockedStateForegroundStyle",
@@ -4723,7 +3938,7 @@
          "uButtonUpForegroundStyle"
       ],
       "hintStyle": "uButtonHintStyle",
-      "hintSymbolsStyle": "uButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "uButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -4741,9 +3956,9 @@
       ]
    },
    "uButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -4751,19 +3966,18 @@
       "text": "U"
    },
    "uButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "U"
    },
    "uButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -4783,90 +3997,69 @@
       ]
    },
    "uButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "7"
    },
    "uButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "《"
    },
    "uButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "<"
    },
    "uButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "7"
+         },
+         {
+            "symbol": "《"
+         },
+         {
+            "symbol": "<"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
+      "foregroundStyle": [
+         "uButtonHintSymbolsForegroundStyle1",
+         "uButtonHintSymbolsForegroundStyle2",
+         "uButtonHintSymbolsForegroundStyle3"
+      ],
       "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
       "selectedIndex": 2,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "uButtonHintSymbolsSubclassStyle1",
-         "uButtonHintSymbolsSubclassStyle2",
-         "uButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "uButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "7"
-      },
-      "foregroundStyle": [
-         "uButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "uButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "《"
-      },
-      "foregroundStyle": [
-         "uButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "uButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "<"
-      },
-      "foregroundStyle": [
-         "uButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "uButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "7"
    },
    "uButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "7"
    },
    "uButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -4877,9 +4070,6 @@
       "action": {
          "character": "v"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "vButtonCapsLockedStateForegroundStyle",
@@ -4892,14 +4082,14 @@
          "vButtonDownForegroundStyle"
       ],
       "hintStyle": "vButtonHintStyle",
-      "hintSymbolsStyle": "vButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "vButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
          }
       },
       "swipeDownAction": {
-         "shortcut": "#paste"
+         "shortcutCommand": "#粘贴"
       },
       "swipeUpAction": {
          "character": "？"
@@ -4914,9 +4104,9 @@
       ]
    },
    "vButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -4924,30 +4114,29 @@
       "text": "V"
    },
    "vButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "doc.on.doc"
    },
    "vButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "V"
    },
    "vButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -4958,10 +4147,6 @@
       "foregroundStyle": [
          "vButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "vButtonSwipeDownHintForegroundStyle"
       ],
@@ -4971,99 +4156,77 @@
       ]
    },
    "vButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "？"
    },
    "vButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "﹖"
    },
    "vButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¿"
    },
    "vButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "？"
+         },
+         {
+            "symbol": "﹖"
+         },
+         {
+            "symbol": "¿"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "vButtonHintSymbolsSubclassStyle1",
-         "vButtonHintSymbolsSubclassStyle2",
-         "vButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "vButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "？"
-      },
       "foregroundStyle": [
          "vButtonHintSymbolsForegroundStyle1",
-         "fullStyle"
-      ]
-   },
-   "vButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "﹖"
-      },
-      "foregroundStyle": [
-         "vButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "vButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "¿"
-      },
-      "foregroundStyle": [
+         "vButtonHintSymbolsForegroundStyle2",
          "vButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "vButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "粘贴"
    },
    "vButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "？"
    },
    "vButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "？"
    },
    "vButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5071,90 +4234,89 @@
       "text": "V"
    },
    "verticalCandidateBackgroundStyle": {
-      "buttonStyleType": "geometry",
-      "normalColor": "312C2D01"
+      "normalColor": "2d2c3101",
+      "type": "original"
    },
-   "verticalCandidateCellStyle": {
-      "commentColor": "505050ff",
+   "verticalCandidateBackspaceButtonForegroundStyle": {
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
+      "systemImageName": "delete.left"
+   },
+   "verticalCandidateBackspaceButtonStyle": {
+      "backgroundStyle": "systemButtonBackgroundStyle",
+      "foregroundStyle": [
+         "verticalCandidateBackspaceButtonForegroundStyle"
+      ]
+   },
+   "verticalCandidateOfCandidateStyle": {
+      "backgroundColor": "0000004d",
+      "commentColor": "cfcfcf",
       "commentFontSize": 16,
       "commentFontWeight": "light",
-      "highlightBackgroundColor": "FCFFFFE0",
-      "indexColor": "5f5f5fff",
+      "cornerRadius": 9,
+      "highlightBackgroundColor": "d1d1d165",
+      "indexColor": "5c5c5c",
       "indexFontSize": 16,
       "indexFontWeight": "light",
-      "insets": {
-         "left": 2,
-         "right": 2
-      },
-      "preferredBackgroundColor": "FCFFFFE0",
-      "preferredCommentColor": "505050ff",
-      "preferredIndexColor": "5f5f5fff",
-      "preferredTextColor": "00B552FF",
-      "textColor": "303030ff",
+      "insets": { },
+      "preferredBackgroundColor": "d1d1d165",
+      "preferredCommentColor": "dfdfdf",
+      "preferredIndexColor": "dfdfdfff",
+      "preferredTextColor": "00E582ff",
+      "separatorColor": "383838",
+      "textColor": "dfdfdf",
       "textFontSize": 20,
       "textFontWeight": "regular"
    },
-   "verticalCandidatesCollection": {
-      "candidateStyle": "verticalCandidateCellStyle",
-      "insets": {
-         "bottom": 0,
-         "left": 3,
-         "right": 3,
-         "top": 8
-      },
-      "maxColumns": 6,
-      "maxRows": 5,
-      "separatorColor": "ADADAD",
-      "size": {
-         "width": "available"
-      },
-      "type": "verticalCandidates"
+   "verticalCandidatePageDownButtonForegroundStyle": {
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
+      "systemImageName": "chevron.down"
    },
-   "verticalCandidatesLayout": [
-      {
-         "VStack": {
-            "subviews": [
-               {
-                  "Cell": "verticalCandidatesCollection"
-               }
-            ]
-         }
+   "verticalCandidatePageDownButtonStyle": {
+      "backgroundStyle": "systemButtonBackgroundStyle",
+      "foregroundStyle": [
+         "verticalCandidatePageDownButtonForegroundStyle"
+      ]
+   },
+   "verticalCandidatePageUpButtonForegroundStyle": {
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
+      "systemImageName": "chevron.up"
+   },
+   "verticalCandidatePageUpButtonStyle": {
+      "backgroundStyle": "systemButtonBackgroundStyle",
+      "foregroundStyle": [
+         "verticalCandidatePageUpButtonForegroundStyle"
+      ]
+   },
+   "verticalCandidateReturnButtonForegroundStyle": {
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
+      "systemImageName": "return"
+   },
+   "verticalCandidateReturnButtonStyle": {
+      "backgroundStyle": "systemButtonBackgroundStyle",
+      "foregroundStyle": [
+         "verticalCandidateReturnButtonForegroundStyle"
+      ]
+   },
+   "verticalCandidateStyle": {
+      "backgroundStyle": "verticalCandidateBackgroundStyle",
+      "backspaceButtonStyle": "verticalCandidateBackspaceButtonStyle",
+      "bottomRowHeight": {
+         "height": 48
       },
-      {
-         "VStack": {
-            "style": "verticalLastColStyle",
-            "subviews": [
-               {
-                  "Cell": "returnPrimaryKeyboardButton"
-               },
-               {
-                  "Cell": "verticalPlaceholderButton"
-               }
-            ]
-         }
-      }
-   ],
-   "verticalCandidatesStyle": {
-      "backgroundStyle": "verticalCandidateBackgroundStyle"
-   },
-   "verticalLastColStyle": {
-      "size": {
-         "width": 45
-      }
-   },
-   "verticalPlaceholderButton": {
-      "action": "none",
-      "size": {
-         "height": "available"
-      }
+      "candidateStyle": "verticalCandidateOfCandidateStyle",
+      "insets": { },
+      "pageDownButtonStyle": "verticalCandidatePageDownButtonStyle",
+      "pageUpButtonStyle": "verticalCandidatePageUpButtonStyle",
+      "returnButtonStyle": "verticalCandidateReturnButtonStyle"
    },
    "wButton": {
       "action": {
          "character": "w"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "wButtonCapsLockedStateForegroundStyle",
@@ -5165,7 +4327,7 @@
          "wButtonUpForegroundStyle"
       ],
       "hintStyle": "wButtonHintStyle",
-      "hintSymbolsStyle": "wButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "wButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -5183,9 +4345,9 @@
       ]
    },
    "wButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5193,19 +4355,18 @@
       "text": "W"
    },
    "wButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "W"
    },
    "wButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -5225,90 +4386,69 @@
       ]
    },
    "wButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "2"
    },
    "wButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "%"
    },
    "wButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "°C"
    },
    "wButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "2"
+         },
+         {
+            "symbol": "%"
+         },
+         {
+            "symbol": "°C"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "wButtonHintSymbolsSubclassStyle1",
-         "wButtonHintSymbolsSubclassStyle2",
-         "wButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "wButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "2"
-      },
       "foregroundStyle": [
-         "wButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "wButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "%"
-      },
-      "foregroundStyle": [
+         "wButtonHintSymbolsForegroundStyle1",
          "wButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "wButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "°C"
-      },
-      "foregroundStyle": [
          "wButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "wButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "2"
    },
    "wButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "2"
    },
    "wButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5319,9 +4459,6 @@
       "action": {
          "character": "x"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "xButtonCapsLockedStateForegroundStyle",
@@ -5334,14 +4471,14 @@
          "xButtonDownForegroundStyle"
       ],
       "hintStyle": "xButtonHintStyle",
-      "hintSymbolsStyle": "xButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "xButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
          }
       },
       "swipeDownAction": {
-         "shortcut": "#cut"
+         "shortcutCommand": "#剪切"
       },
       "swipeUpAction": {
          "character": "-"
@@ -5356,9 +4493,9 @@
       ]
    },
    "xButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5366,30 +4503,29 @@
       "text": "X"
    },
    "xButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "scissors"
    },
    "xButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "X"
    },
    "xButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -5400,10 +4536,6 @@
       "foregroundStyle": [
          "xButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "xButtonSwipeDownHintForegroundStyle"
       ],
@@ -5413,100 +4545,77 @@
       ]
    },
    "xButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "^"
    },
    "xButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "×"
    },
    "xButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "+"
    },
    "xButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "^"
+         },
+         {
+            "symbol": "×"
+         },
+         {
+            "symbol": "+"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "xButtonHintSymbolsSubclassStyle1",
-         "xButtonHintSymbolsSubclassStyle2",
-         "xButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "xButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "^"
-      },
       "foregroundStyle": [
          "xButtonHintSymbolsForegroundStyle1",
-         "halfStyle"
-      ]
-   },
-   "xButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "×"
-      },
-      "foregroundStyle": [
-         "xButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "xButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "+"
-      },
-      "foregroundStyle": [
-         "xButtonHintSymbolsForegroundStyle3",
-         "halfStyle"
-      ]
+         "xButtonHintSymbolsForegroundStyle2",
+         "xButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "xButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "剪切"
    },
    "xButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "-"
    },
    "xButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "-"
    },
    "xButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5517,9 +4626,6 @@
       "action": {
          "character": "y"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "yButtonCapsLockedStateForegroundStyle",
@@ -5530,7 +4636,7 @@
          "yButtonUpForegroundStyle"
       ],
       "hintStyle": "yButtonHintStyle",
-      "hintSymbolsStyle": "yButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "yButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
@@ -5548,9 +4654,9 @@
       ]
    },
    "yButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5558,19 +4664,18 @@
       "text": "Y"
    },
    "yButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "Y"
    },
    "yButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -5590,89 +4695,69 @@
       ]
    },
    "yButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "6"
    },
    "yButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "≈"
    },
    "yButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "≒"
    },
    "yButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "6"
+         },
+         {
+            "symbol": "≈"
+         },
+         {
+            "symbol": "≒"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 2,
-      "size": {
-         "height": 45,
-         "width": 40
-      },
-      "symbolStyles": [
-         "yButtonHintSymbolsSubclassStyle1",
-         "yButtonHintSymbolsSubclassStyle2",
-         "yButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "yButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "6"
-      },
       "foregroundStyle": [
-         "yButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "yButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "≈"
-      },
-      "foregroundStyle": [
-         "yButtonHintSymbolsForegroundStyle2"
-      ]
-   },
-   "yButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "≒"
-      },
-      "foregroundStyle": [
+         "yButtonHintSymbolsForegroundStyle1",
+         "yButtonHintSymbolsForegroundStyle2",
          "yButtonHintSymbolsForegroundStyle3"
-      ]
+      ],
+      "insets": { },
+      "selectedIndex": 2,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "yButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "6"
    },
    "yButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.28000000000000003
+         "y": 0.58000000000000007
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "6"
    },
    "yButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5683,9 +4768,6 @@
       "action": {
          "character": "z"
       },
-      "animation": [
-         "scaleAnimation"
-      ],
       "backgroundStyle": "alphabeticButtonBackgroundStyle",
       "capsLockedStateForegroundStyle": [
          "zButtonCapsLockedStateForegroundStyle",
@@ -5698,14 +4780,14 @@
          "zButtonDownForegroundStyle"
       ],
       "hintStyle": "zButtonHintStyle",
-      "hintSymbolsStyle": "zButtonHintSymbolsStyle",
+      "holdSymbolsStyle": "zButtonHintSymbolsStyle",
       "size": {
          "width": {
             "percentage": "0.1"
          }
       },
       "swipeDownAction": {
-         "shortcut": "#undo"
+         "shortcutCommand": "#撤销"
       },
       "swipeUpAction": {
          "symbol": "_"
@@ -5720,9 +4802,9 @@
       ]
    },
    "zButtonCapsLockedStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",
@@ -5730,30 +4812,29 @@
       "text": "Z"
    },
    "zButtonDownForegroundStyle": {
-      "buttonStyleType": "systemImage",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.5,
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.turn.up.left"
    },
    "zButtonForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "Z"
    },
    "zButtonHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 20,
       "normalColor": "000000",
@@ -5764,10 +4845,6 @@
       "foregroundStyle": [
          "zButtonHintForegroundStyle"
       ],
-      "size": {
-         "height": 48,
-         "width": 48
-      },
       "swipeDownForegroundStyle": [
          "zButtonSwipeDownHintForegroundStyle"
       ],
@@ -5777,100 +4854,77 @@
       ]
    },
    "zButtonHintSymbolsForegroundStyle1": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "—"
    },
    "zButtonHintSymbolsForegroundStyle2": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "~"
    },
    "zButtonHintSymbolsForegroundStyle3": {
-      "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "～"
    },
    "zButtonHintSymbolsStyle": {
+      "actions": [
+         {
+            "symbol": "—"
+         },
+         {
+            "symbol": "~"
+         },
+         {
+            "symbol": "～"
+         }
+      ],
       "backgroundStyle": "hintSymbolsBackgroundStyle",
-      "insets": { },
-      "selectedBackgroundStyle": "hintSymbolsSelectedBackgroundStyle",
-      "selectedIndex": 0,
-      "size": {
-         "height": 48,
-         "width": 40
-      },
-      "symbolStyles": [
-         "zButtonHintSymbolsSubclassStyle1",
-         "zButtonHintSymbolsSubclassStyle2",
-         "zButtonHintSymbolsSubclassStyle3"
-      ]
-   },
-   "zButtonHintSymbolsSubclassStyle1": {
-      "action": {
-         "symbol": "—"
-      },
       "foregroundStyle": [
-         "zButtonHintSymbolsForegroundStyle1"
-      ]
-   },
-   "zButtonHintSymbolsSubclassStyle2": {
-      "action": {
-         "symbol": "~"
-      },
-      "foregroundStyle": [
+         "zButtonHintSymbolsForegroundStyle1",
          "zButtonHintSymbolsForegroundStyle2",
-         "halfStyle"
-      ]
-   },
-   "zButtonHintSymbolsSubclassStyle3": {
-      "action": {
-         "symbol": "～"
-      },
-      "foregroundStyle": [
-         "zButtonHintSymbolsForegroundStyle3",
-         "fullStyle"
-      ]
+         "zButtonHintSymbolsForegroundStyle3"
+      ],
+      "insets": { },
+      "selectedIndex": 0,
+      "selectedStyle": "hintSymbolsSelectedBackgroundStyle",
+      "symbolWidth": "1em"
    },
    "zButtonSwipeDownHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.38
+         "y": 0.67999999999999994
       },
       "fontSize": 16,
       "normalColor": "000000",
       "text": "撤销"
    },
    "zButtonSwipeUpHintForegroundStyle": {
-      "buttonStyleType": "text",
       "center": {
-         "y": 0.17999999999999999
+         "y": 0.47999999999999998
       },
       "fontSize": 20,
       "normalColor": "000000",
       "text": "_"
    },
    "zButtonUpForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
          "x": 0.78000000000000003,
-         "y": 0.23000000000000001
+         "y": 0.53000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "_"
    },
    "zButtonUppercaseStateForegroundStyle": {
-      "buttonStyleType": "text",
+      "animation": "foregroundAnimation",
       "center": {
-         "y": 0.52000000000000002
+         "y": 0.82000000000000006
       },
       "fontSize": 21,
       "highlightColor": "000000",

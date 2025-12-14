@@ -2,12 +2,12 @@
 
 local Imports = import "../imports.libsonnet";
 local utils = import "../utils.libsonnet";
-local baseStyle = (Imports.baseStyle)();
+local buttonStyle = Imports.buttonStyle;
 
 
-local candidateContextMenuStyleName = baseStyle.candidateContextMenuStyleName;
-local candidateStateButtonSeparatorForegroundStyleName = baseStyle.candidateStateButtonSeparatorForegroundStyleName;
-local verticalCandidateButtonBackgroundStyleName = baseStyle.systemButtonBackgroundStyleName;
+local candidateContextMenuStyleName = buttonStyle.candidateContextMenuStyleName;
+local candidateStateButtonSeparatorForegroundStyleName = buttonStyle.candidateStateButtonSeparatorForegroundStyleName;
+local verticalCandidateButtonBackgroundStyleName = buttonStyle.systemButtonBackgroundStyleName;
 local verticalCandidatesCollectionName = 'verticalCandidatesCollection';
 local verticalLastColStyleName = 'verticalLastColStyle';
 local verticalLastRowStyleName = 'verticalLastRowStyle';
@@ -16,12 +16,12 @@ local verticalCandidatePageDownButtonStyleName = 'verticalCandidatePageDownButto
 local verticalCandidateReturnButtonStyleName = 'verticalCandidateReturnButtonStyle';
 local verticalCandidateBackspaceButtonStyleName = 'verticalCandidateBackspaceButtonStyle';
 
-function(app, device, orientation, theme, calCandidateCase=true) 
+function(app, device, orientation, theme, candidateCase=true) 
 
   local horizontalCandidateStyle = {
     horizontalCandidatesStyle: {
-      // insets: Imports.baseParam.inner["横向候选布局内距"], // 整个横向候选布局的内距
-      backgroundStyle: baseStyle.toolbarBackgroundStyleName
+      // insets: buttonStyle.baseParams("横向候选布局内距"), // 整个横向候选布局的内距
+      backgroundStyle: buttonStyle.toolbarBackgroundStyleName
     },
     horizontalCandidatesLayout: [
       {
@@ -37,14 +37,14 @@ function(app, device, orientation, theme, calCandidateCase=true)
       type: 'horizontalCandidates',
       candidateStyle: "horizontalCandidateCellStyle",
       size: { width: "available" }, // horizontalCandidatesSize
-      maxColumns: if orientation != "landscape" then Imports.baseParam.color.nativeConfig["纵横候选列表其他参数"]["最大横向候选字显示数量"]
-        else 15
-      // insets: Imports.baseParam.inner["横向候选列表样式内距"], //候选区域样式内距
+      maxColumns: if orientation != "landscape" then buttonStyle.baseParams("纵横候选列表其他参数", "最大横向候选字显示数量")
+        else 15,
+      insets: buttonStyle.baseParams("横向候选列表样式内距"), //候选区域样式内距
       // backgroundStyle: "toolbarButtonBackgroundStyleName" // 屏蔽, 用toolbar背景
     },
     horizontalCandidateCellStyle: {
-      insets: Imports.baseParam.inner["横向候选字区域内距"],
-    } + baseStyle.candidatesStyle(theme),
+      // insets: buttonStyle.baseParams("横向候选字区域内距"),
+    } + buttonStyle.candidatesStyle(theme),
     candidateStateButton: {
       size: Imports.getSize(device, orientation, "candidateStateButtonSize").size,
       action: { shortcut: '#candidatesBarStateToggle' },
@@ -55,12 +55,12 @@ function(app, device, orientation, theme, calCandidateCase=true)
         "candidateStateButtonForegroundStyle"
       ]
     },
-    candidateStateButtonBackgroundStyle: utils.newStyleFactory(
-      baseStyle.candidateStateButtonBackgroundStyle)(app, device, orientation, theme),
-    [candidateStateButtonSeparatorForegroundStyleName]: utils.newStyleFactory(
-      baseStyle.candidateStateButtonSeparatorForegroundStyle)(app, device, orientation, theme),
+    candidateStateButtonBackgroundStyle: utils.newAutoStyle(
+      buttonStyle.candidateStateButtonBackgroundStyle, app, theme),
+    [candidateStateButtonSeparatorForegroundStyleName]: utils.newAutoStyle(
+      buttonStyle.candidateStateButtonSeparatorForegroundStyle(theme), app, theme),
     candidateStateButtonForegroundStyle: 
-      utils.newStyleFactory(baseStyle.candidateStateButtonForegroundStyle)(app, device, orientation, theme)
+      utils.newAutoStyle(buttonStyle.candidateStateButtonForegroundStyle, app, theme)
   };
 
   local verticalCandidateStyle = {
@@ -108,26 +108,27 @@ function(app, device, orientation, theme, calCandidateCase=true)
         },
       },
     ],
-    verticalCandidatesLayout: if calCandidateCase then verticalCandidatesLayoutCase1
+    verticalCandidatesLayout: if candidateCase then verticalCandidatesLayoutCase1
       else verticalCandidatesLayoutCase2,
     verticalCandidateBackgroundStyle: 
-      utils.newStyleFactory(baseStyle.verticalCandidateBackgroundStyle())(app, device, orientation, theme),
+      utils.newAutoStyle(buttonStyle.verticalCandidateBackgroundStyle, app, theme),
     [verticalCandidatesCollectionName]: {
       type: "verticalCandidates",
       size: { width: "available" }, 
-      insets: Imports.baseParam.inner["纵向候选列表样式内距"],
-      maxRows: Imports.baseParam.color.nativeConfig["纵横候选列表其他参数"]["最大纵向候选字列表行数"],
-      maxColumns: Imports.baseParam.color.nativeConfig["纵横候选列表其他参数"]["最大纵向候选字列表列数"],
-      separatorColor: Imports.baseParam.color.nativeConfig["纵向候选区域样式"][theme].separatorColor,
+      insets: buttonStyle.baseParams("纵向候选列表样式内距"),
+      maxRows: 5,
+      maxColumns: buttonStyle.baseParams("纵横候选列表其他参数", "最大纵向候选字列表列数"),
+      separatorColor: buttonStyle.baseParams("纵向候选区域样式", theme).separatorColor,
       candidateStyle: "verticalCandidateCellStyle"
-    } + (if calCandidateCase == false then {
+    } + (if candidateCase == false then {
       backgroundStyle: verticalCandidatesCollectionName + "BackgroundStyle"
     } else {}),
-    verticalCandidateCellStyle: baseStyle.candidatesStyle(theme){
-      insets: Imports.baseParam.inner["纵向候选字区域内距"]
+    verticalCandidateCellStyle: buttonStyle.candidatesStyle(theme){
+      insets: { left: 2, right: 2 } 
+          + buttonStyle.baseParams("纵向候选字区域内距")
     }
   };
-  local verticalCandidateSubclassStyle = if calCandidateCase then {
+  local verticalCandidateSubclassStyle = if candidateCase then {
     [verticalLastColStyleName]: {
       size: Imports.getSize(device, orientation, "candidateStateButtonSize").size
     },
@@ -141,7 +142,7 @@ function(app, device, orientation, theme, calCandidateCase=true)
       ],
     },
     returnPrimaryKeyboardButtonForegroundStyle: 
-      utils.newStyleFactory(baseStyle.returnPrimaryKeyboardButtonForegroundStyle)(app, device, orientation, theme),
+      utils.newAutoStyle(buttonStyle.returnPrimaryKeyboardButtonForegroundStyle, app, theme),
     verticalPlaceholderButton: {
       size: { height: "available" },
       action: "none"
@@ -177,9 +178,10 @@ function(app, device, orientation, theme, calCandidateCase=true)
     {
       [verticalCandidatesCollectionName + "BackgroundStyle"]: {
         buttonStyleType: "geometry",
-        insets: Imports.baseParam.inner["纵向候选字区域内距"],
-        cornerRadius: Imports.baseParam.color.nativeConfig["纵横候选列表其他参数"].cornerRadius,
-        normalColor: Imports.baseParam.color.nativeConfig["纵向候选区域样式"][theme].backgroundColor
+        insets: { top: 0, bottom: -2, left: 3, right: 3 } 
+          + buttonStyle.baseParams("纵向候选字区域内距"),
+        cornerRadius: buttonStyle.baseParams("纵横候选列表其他参数", "cornerRadius"),
+        normalColor: buttonStyle.baseParams("纵向候选区域样式", theme).backgroundColor
       },
       [verticalLastRowStyleName]: Imports.getSize(device, orientation, "verticalLastRowStyleSize"),
     } +
@@ -195,9 +197,10 @@ function(app, device, orientation, theme, calCandidateCase=true)
           [styleKeyName]: {
             backgroundStyle: verticalCandidateButtonBackgroundStyleName,
             foregroundStyle: [foregroundStyleKeyName],
+            animation: Imports.animation.setCskinAnimationName,
             action: mapping.action
           },
-          [foregroundStyleKeyName]: utils.newStyleFactory(mapping.specificForegroundStyleRef + baseStyle.verticalForegroundStyle)(app, device, orientation, theme),
+          [foregroundStyleKeyName]: utils.newAutoStyle(mapping.specificForegroundStyleRef + buttonStyle.verticalForegroundStyle, app, theme)
         };
         acc + currentStyles
       ),
@@ -208,7 +211,7 @@ function(app, device, orientation, theme, calCandidateCase=true)
 
   local candidateContextMenuStyle = {
     [candidateContextMenuStyleName]: [
-      // { name: '空格', action: 'space' },
+      // { name: "空格", action: "space" },
     ]
   };
 

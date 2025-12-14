@@ -60,8 +60,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "checklist"
    },
    "aButtonForegroundStyle": {
@@ -71,7 +71,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "A"
    },
    "aButtonHintForegroundStyle": {
@@ -103,22 +103,22 @@
    "aButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "'"
    },
    "aButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "＇"
    },
    "aButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˉ"
    },
    "aButtonHintSymbolsStyle": {
@@ -187,8 +187,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "`"
    },
    "aButtonUppercaseStateForegroundStyle": {
@@ -204,16 +204,16 @@
    "alphabeticButtonBackgroundStyle": {
       "buttonStyleType": "geometry",
       "cornerRadius": 7,
-      "highlightColor": "00103429",
-      "highlightLowerEdgeColor": "0000004D",
+      "highlightColor": "ffffff19",
+      "highlightLowerEdgeColor": "00000080",
       "insets": {
          "bottom": 5,
          "left": 3,
          "right": 3,
          "top": 7
       },
-      "normalColor": "feffff",
-      "normalLowerEdgeColor": "0000004D"
+      "normalColor": "d1d1d165",
+      "normalLowerEdgeColor": "00000080"
    },
    "bButton": {
       "action": {
@@ -266,7 +266,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "B"
    },
    "bButtonHintForegroundStyle": {
@@ -294,22 +294,22 @@
    "bButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "丶"
    },
    "bButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ","
    },
    "bButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "，"
    },
    "bButtonHintSymbolsStyle": {
@@ -370,8 +370,8 @@
          "y": 0.23000000000000001
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "、"
    },
    "bButtonUppercaseStateForegroundStyle": {
@@ -417,15 +417,15 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "backspaceButtonForegroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 20,
-      "highlightColor": "000000",
+      "highlightColor": "feffff",
       "highlightSystemImageName": "delete.left.fill",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "systemImageName": "delete.left"
    },
    "backspaceButtonUpForegroundStyle": {
@@ -435,14 +435,14 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "blueButtonBackgroundStyle": {
       "buttonStyleType": "geometry",
       "cornerRadius": 7,
-      "highlightColor": "feffff",
-      "highlightLowerEdgeColor": "0000004D",
+      "highlightColor": "d1d1d165",
+      "highlightLowerEdgeColor": "00000080",
       "insets": {
          "bottom": 5,
          "left": 3,
@@ -450,12 +450,12 @@
          "top": 7
       },
       "normalColor": "23C891",
-      "normalLowerEdgeColor": "0000004D"
+      "normalLowerEdgeColor": "00000080"
    },
    "blueButtonForegroundStyle": {
       "buttonStyleType": "text",
       "fontSize": 16,
-      "highlightColor": "000000",
+      "highlightColor": "feffff",
       "normalColor": "feffff",
       "text": "$returnKeyType"
    },
@@ -516,8 +516,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "square.on.square.dashed"
    },
    "cButtonForegroundStyle": {
@@ -527,7 +527,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "C"
    },
    "cButtonHintForegroundStyle": {
@@ -559,22 +559,22 @@
    "cButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "\\"
    },
    "cButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "÷"
    },
    "cButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "✓"
    },
    "cButtonHintSymbolsStyle": {
@@ -642,8 +642,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "/"
    },
    "cButtonUppercaseStateForegroundStyle": {
@@ -675,8 +675,8 @@
    },
    "candidateStateButtonBackgroundStyle": {
       "buttonStyleType": "geometry",
-      "highlightColor": "00103412",
-      "normalColor": "57575701"
+      "highlightColor": "d1d1d165",
+      "normalColor": "fefefe01"
    },
    "candidateStateButtonForegroundStyle": {
       "buttonStyleType": "systemImage",
@@ -686,8 +686,8 @@
       },
       "fontSize": 18,
       "fontWeight": "regular",
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "chevron.down"
    },
    "candidateStateButtonSeparatorForegroundStyle": {
@@ -698,8 +698,8 @@
       },
       "fontSize": 33,
       "fontWeight": "ultraLight",
-      "highlightColor": "57575791",
-      "normalColor": "57575791",
+      "highlightColor": "fefefe66",
+      "normalColor": "fefefe66",
       "systemImageName": "poweron"
    },
    "dButton": {
@@ -753,7 +753,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "D"
    },
    "dButtonHintForegroundStyle": {
@@ -782,22 +782,22 @@
    "dButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "＃"
    },
    "dButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "·"
    },
    "dButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "•"
    },
    "dButtonHintSymbolsStyle": {
@@ -856,8 +856,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "#"
    },
    "dButtonUppercaseStateForegroundStyle": {
@@ -886,8 +886,8 @@
    "dismissKeyboardButtonForegroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "chevron.down"
    },
    "eButton": {
@@ -941,7 +941,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "E"
    },
    "eButtonHintForegroundStyle": {
@@ -969,22 +969,22 @@
    "eButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "3"
    },
    "eButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "£"
    },
    "eButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "€"
    },
    "eButtonHintSymbolsStyle": {
@@ -1042,8 +1042,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "3"
    },
    "eButtonUppercaseStateForegroundStyle": {
@@ -1128,8 +1128,8 @@
    "enterButtonForegroundStyle": {
       "buttonStyleType": "text",
       "fontSize": 16,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "text": "$returnKeyType"
    },
    "enterButtonUpForegroundStyle": {
@@ -1139,8 +1139,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "enterPreeditStateStyleNotification": {
       "backgroundStyle": "blueButtonBackgroundStyle",
@@ -1198,7 +1198,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "F"
    },
    "fButtonHintForegroundStyle": {
@@ -1227,22 +1227,22 @@
    "fButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "&"
    },
    "fButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "∞"
    },
    "fButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "π"
    },
    "fButtonHintSymbolsStyle": {
@@ -1301,8 +1301,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "*"
    },
    "fButtonUppercaseStateForegroundStyle": {
@@ -1324,7 +1324,7 @@
       "fontSize": 10,
       "fontWeight": "light",
       "highlightColor": "feffff",
-      "normalColor": "57575791",
+      "normalColor": "fefefe66",
       "text": "全"
    },
    "gButton": {
@@ -1378,7 +1378,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "G"
    },
    "gButtonHintForegroundStyle": {
@@ -1407,22 +1407,22 @@
    "gButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "!"
    },
    "gButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¡"
    },
    "gButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "﹏"
    },
    "gButtonHintSymbolsStyle": {
@@ -1481,8 +1481,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "！"
    },
    "gButtonUppercaseStateForegroundStyle": {
@@ -1546,7 +1546,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "H"
    },
    "hButtonHintForegroundStyle": {
@@ -1574,22 +1574,22 @@
    "hButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "{"
    },
    "hButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "["
    },
    "hButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "("
    },
    "hButtonHintSymbolsStyle": {
@@ -1650,8 +1650,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "「"
    },
    "hButtonUppercaseStateForegroundStyle": {
@@ -1673,7 +1673,7 @@
       "fontSize": 10,
       "fontWeight": "light",
       "highlightColor": "feffff",
-      "normalColor": "57575791",
+      "normalColor": "fefefe66",
       "text": "半"
    },
    "hintBackgroundStyle": {
@@ -1688,9 +1688,9 @@
       "borderSize": 1,
       "buttonStyleType": "geometry",
       "cornerRadius": 7,
-      "normalBorderColor": "d2d2d3e6",
-      "normalColor": "FCFCFE",
-      "normalShadowColor": "797B7E",
+      "normalBorderColor": "6E6E6E4D",
+      "normalColor": "78797AFC",
+      "normalShadowColor": "00000050",
       "shadowOffset": {
          "x": 0,
          "y": 3
@@ -1711,18 +1711,18 @@
       "normalColor": "23c891"
    },
    "horizontalCandidateCellStyle": {
-      "commentColor": "505050ff",
+      "commentColor": "cfcfcf",
       "commentFontSize": 16,
       "commentFontWeight": "light",
-      "highlightBackgroundColor": "FCFFFFE0",
-      "indexColor": "5f5f5fff",
+      "highlightBackgroundColor": "d1d1d165",
+      "indexColor": "5c5c5c",
       "indexFontSize": 16,
       "indexFontWeight": "light",
-      "preferredBackgroundColor": "FCFFFFE0",
-      "preferredCommentColor": "505050ff",
-      "preferredIndexColor": "5f5f5fff",
-      "preferredTextColor": "00B552FF",
-      "textColor": "303030ff",
+      "preferredBackgroundColor": "d1d1d165",
+      "preferredCommentColor": "dfdfdf",
+      "preferredIndexColor": "dfdfdfff",
+      "preferredTextColor": "00E582ff",
+      "textColor": "dfdfdf",
       "textFontSize": 20,
       "textFontWeight": "regular"
    },
@@ -1902,7 +1902,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "I"
    },
    "iButtonHintForegroundStyle": {
@@ -1930,22 +1930,22 @@
    "iButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "8"
    },
    "iButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "》"
    },
    "iButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ">"
    },
    "iButtonHintSymbolsStyle": {
@@ -2004,8 +2004,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "8"
    },
    "iButtonUppercaseStateForegroundStyle": {
@@ -2069,7 +2069,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "J"
    },
    "jButtonHintForegroundStyle": {
@@ -2097,22 +2097,22 @@
    "jButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "}"
    },
    "jButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "]"
    },
    "jButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ")"
    },
    "jButtonHintSymbolsStyle": {
@@ -2174,8 +2174,8 @@
          "y": 0.23000000000000001
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "」"
    },
    "jButtonUppercaseStateForegroundStyle": {
@@ -2239,7 +2239,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "K"
    },
    "kButtonHintForegroundStyle": {
@@ -2267,22 +2267,22 @@
    "kButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "'"
    },
    "kButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "‘"
    },
    "kButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "\""
    },
    "kButtonHintSymbolsStyle": {
@@ -2342,8 +2342,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "“"
    },
    "kButtonUppercaseStateForegroundStyle": {
@@ -2358,7 +2358,7 @@
    },
    "keyboardBackgroundStyle": {
       "buttonStyleType": "geometry",
-      "normalColor": "312C2D01"
+      "normalColor": "2d2c3101"
    },
    "keyboardHeight": 216,
    "keyboardLayout": [
@@ -2544,7 +2544,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "L"
    },
    "lButtonHintForegroundStyle": {
@@ -2572,22 +2572,22 @@
    "lButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "'"
    },
    "lButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "’"
    },
    "lButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "\""
    },
    "lButtonHintSymbolsStyle": {
@@ -2647,8 +2647,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "”"
    },
    "lButtonUppercaseStateForegroundStyle": {
@@ -2718,8 +2718,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.right.to.line"
    },
    "mButtonForegroundStyle": {
@@ -2729,7 +2729,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "M"
    },
    "mButtonHintForegroundStyle": {
@@ -2761,22 +2761,22 @@
    "mButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "…"
    },
    "mButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "⋯"
    },
    "mButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ";"
    },
    "mButtonHintSymbolsStyle": {
@@ -2844,8 +2844,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "；"
    },
    "mButtonUppercaseStateForegroundStyle": {
@@ -2915,8 +2915,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.left.to.line"
    },
    "nButtonForegroundStyle": {
@@ -2926,7 +2926,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "N"
    },
    "nButtonHintForegroundStyle": {
@@ -2958,22 +2958,22 @@
    "nButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "."
    },
    "nButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "。"
    },
    "nButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": ":"
    },
    "nButtonHintSymbolsStyle": {
@@ -3042,8 +3042,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "："
    },
    "nButtonUppercaseStateForegroundStyle": {
@@ -3107,7 +3107,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "O"
    },
    "oButtonHintForegroundStyle": {
@@ -3135,22 +3135,22 @@
    "oButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "9"
    },
    "oButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "【"
    },
    "oButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "（"
    },
    "oButtonHintSymbolsStyle": {
@@ -3209,8 +3209,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "9"
    },
    "oButtonUppercaseStateForegroundStyle": {
@@ -3254,28 +3254,28 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "ottButtonForegroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "textformat.123"
    },
    "ottButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "符号"
    },
    "ottButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "表情"
    },
    "ottButtonHintSymbolsStyle": {
@@ -3315,8 +3315,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "pButton": {
       "action": {
@@ -3369,7 +3369,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "P"
    },
    "pButtonHintForegroundStyle": {
@@ -3397,22 +3397,22 @@
    "pButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "0"
    },
    "pButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "】"
    },
    "pButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "）"
    },
    "pButtonHintSymbolsStyle": {
@@ -3471,8 +3471,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "0"
    },
    "pButtonUppercaseStateForegroundStyle": {
@@ -3488,7 +3488,7 @@
    "preeditForegroundStyle": {
       "buttonStyleType": "text",
       "fontSize": 13,
-      "normalColor": "000000"
+      "normalColor": "feffff"
    },
    "preeditHeight": 15,
    "preeditStyle": {
@@ -3499,7 +3499,7 @@
       },
       "preeditBackgroundStyle": {
          "buttonStyleType": "geometry",
-         "normalColor": "312C2D01"
+         "normalColor": "2d2c3101"
       }
    },
    "primaryButton": {
@@ -3588,7 +3588,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "Q"
    },
    "qButtonHintForegroundStyle": {
@@ -3616,22 +3616,22 @@
    "qButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "1"
    },
    "qButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "|"
    },
    "qButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¦"
    },
    "qButtonHintSymbolsStyle": {
@@ -3690,8 +3690,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "1"
    },
    "qButtonUppercaseStateForegroundStyle": {
@@ -3755,7 +3755,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "R"
    },
    "rButtonHintForegroundStyle": {
@@ -3783,22 +3783,22 @@
    "rButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "2"
    },
    "rButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "$"
    },
    "rButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¥"
    },
    "rButtonHintSymbolsStyle": {
@@ -3857,8 +3857,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "4"
    },
    "rButtonUppercaseStateForegroundStyle": {
@@ -3890,8 +3890,8 @@
       "buttonStyleType": "systemImage",
       "fontSize": 18,
       "fontWeight": "regular",
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "chevron.up"
    },
    "sButton": {
@@ -3951,8 +3951,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.turn.up.right"
    },
    "sButtonForegroundStyle": {
@@ -3962,7 +3962,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "S"
    },
    "sButtonHintForegroundStyle": {
@@ -3994,22 +3994,22 @@
    "sButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˊ"
    },
    "sButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˇ"
    },
    "sButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "ˋ"
    },
    "sButtonHintSymbolsStyle": {
@@ -4076,8 +4076,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "@"
    },
    "sButtonUppercaseStateForegroundStyle": {
@@ -4130,8 +4130,8 @@
    "shiftButtonCapsLockedStateForegroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 20,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "capslock.fill"
    },
    "shiftButtonDownForegroundStyle": {
@@ -4141,29 +4141,29 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "shiftButtonForegroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 20,
-      "highlightColor": "000000",
+      "highlightColor": "feffff",
       "highlightSystemImageName": "shift.fill",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "systemImageName": "shift"
    },
    "shiftButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "选单"
    },
    "shiftButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "方案"
    },
    "shiftButtonHintSymbolsStyle": {
@@ -4203,14 +4203,14 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "shiftButtonUppercaseStateForegroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 20,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "systemImageName": "shift.fill"
    },
    "spaceButton": {
@@ -4242,8 +4242,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "spaceButtonForegroundStyle": {
       "buttonStyleType": "text",
@@ -4252,7 +4252,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": " "
    },
    "spaceButtonUpForegroundStyle": {
@@ -4262,28 +4262,28 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01"
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01"
    },
    "systemButtonBackgroundStyle": {
       "buttonStyleType": "geometry",
       "cornerRadius": 7,
-      "highlightColor": "feffff",
-      "highlightLowerEdgeColor": "0000004D",
+      "highlightColor": "d1d1d165",
+      "highlightLowerEdgeColor": "00000080",
       "insets": {
          "bottom": 5,
          "left": 3,
          "right": 3,
          "top": 7
       },
-      "normalColor": "00103429",
-      "normalLowerEdgeColor": "0000004D"
+      "normalColor": "ffffff19",
+      "normalLowerEdgeColor": "00000080"
    },
    "systemButtonForegroundStyle": {
       "buttonStyleType": "text",
       "fontSize": 16,
-      "highlightColor": "000000",
-      "normalColor": "000000",
+      "highlightColor": "feffff",
+      "normalColor": "feffff",
       "text": "$returnKeyType"
    },
    "tButton": {
@@ -4337,7 +4337,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "T"
    },
    "tButtonHintForegroundStyle": {
@@ -4365,22 +4365,22 @@
    "tButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "5"
    },
    "tButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "="
    },
    "tButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "≠"
    },
    "tButtonHintSymbolsStyle": {
@@ -4439,8 +4439,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "5"
    },
    "tButtonUppercaseStateForegroundStyle": {
@@ -4490,7 +4490,7 @@
          "highlightColor": "000000",
          "normalColor": "000000"
       },
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "，"
    },
    "toggle_LButtonUpForegroundStyle": {
@@ -4500,8 +4500,8 @@
          "y": 0.29999999999999999
       },
       "fontSize": 14,
-      "highlightColor": "575757",
-      "normalColor": "575757e6",
+      "highlightColor": "ffffff65",
+      "normalColor": "ffffff65",
       "text": "。"
    },
    "toggle_RButton": {
@@ -4529,19 +4529,19 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000"
+      "normalColor": "feffff"
    },
    "toolbarBackgroundStyle": {
       "toolbarBackgroundStyle": {
          "buttonStyleType": "geometry",
-         "normalColor": "312C2D01"
+         "normalColor": "2d2c3101"
       }
    },
    "toolbarButtonForegroundStyle10": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "switch.2"
    },
    "toolbarButtonForegroundStyle11": {
@@ -4550,8 +4550,8 @@
          "y": 0.48999999999999999
       },
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "text": "简"
    },
    "toolbarButtonForegroundStyle12": {
@@ -4560,66 +4560,66 @@
          "y": 0.48999999999999999
       },
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "text": "中"
    },
    "toolbarButtonForegroundStyle3": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "link"
    },
    "toolbarButtonForegroundStyle4": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
+      "highlightColor": "00E582",
       "highlightSystemImageName": "cube.fill",
-      "normalColor": "575757",
+      "normalColor": "feffffcc",
       "systemImageName": "cube"
    },
    "toolbarButtonForegroundStyle5": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "clipboard"
    },
    "toolbarButtonForegroundStyle6": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "function"
    },
    "toolbarButtonForegroundStyle7": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
+      "highlightColor": "00E582",
       "highlightSystemImageName": "pawprint.fill",
-      "normalColor": "575757",
+      "normalColor": "feffffcc",
       "systemImageName": "pawprint"
    },
    "toolbarButtonForegroundStyle8": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "keyboard.onehanded.right"
    },
    "toolbarButtonForegroundStyle9": {
       "buttonStyleType": "systemImage",
       "fontSize": 16,
-      "highlightColor": "00B552",
-      "normalColor": "575757",
+      "highlightColor": "00E582",
+      "normalColor": "feffffcc",
       "systemImageName": "keyboard.onehanded.left"
    },
    "toolbarButtonRealBackgroundStyle": {
       "buttonStyleType": "systemImage",
       "fontSize": 45,
-      "highlightColor": "00103429",
-      "normalColor": "feffff",
+      "highlightColor": "d1d1d165",
+      "normalColor": "ffffff19",
       "systemImageName": "circlebadge.fill"
    },
    "toolbarButtonStyle10": {
@@ -4757,7 +4757,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "U"
    },
    "uButtonHintForegroundStyle": {
@@ -4785,22 +4785,22 @@
    "uButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "7"
    },
    "uButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "《"
    },
    "uButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "<"
    },
    "uButtonHintSymbolsStyle": {
@@ -4859,8 +4859,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "7"
    },
    "uButtonUppercaseStateForegroundStyle": {
@@ -4930,8 +4930,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "doc.on.doc"
    },
    "vButtonForegroundStyle": {
@@ -4941,7 +4941,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "V"
    },
    "vButtonHintForegroundStyle": {
@@ -4973,22 +4973,22 @@
    "vButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "？"
    },
    "vButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "﹖"
    },
    "vButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "¿"
    },
    "vButtonHintSymbolsStyle": {
@@ -5056,8 +5056,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "？"
    },
    "vButtonUppercaseStateForegroundStyle": {
@@ -5072,25 +5072,25 @@
    },
    "verticalCandidateBackgroundStyle": {
       "buttonStyleType": "geometry",
-      "normalColor": "312C2D01"
+      "normalColor": "2d2c3101"
    },
    "verticalCandidateCellStyle": {
-      "commentColor": "505050ff",
+      "commentColor": "cfcfcf",
       "commentFontSize": 16,
       "commentFontWeight": "light",
-      "highlightBackgroundColor": "FCFFFFE0",
-      "indexColor": "5f5f5fff",
+      "highlightBackgroundColor": "d1d1d165",
+      "indexColor": "5c5c5c",
       "indexFontSize": 16,
       "indexFontWeight": "light",
       "insets": {
          "left": 2,
          "right": 2
       },
-      "preferredBackgroundColor": "FCFFFFE0",
-      "preferredCommentColor": "505050ff",
-      "preferredIndexColor": "5f5f5fff",
-      "preferredTextColor": "00B552FF",
-      "textColor": "303030ff",
+      "preferredBackgroundColor": "d1d1d165",
+      "preferredCommentColor": "dfdfdf",
+      "preferredIndexColor": "dfdfdfff",
+      "preferredTextColor": "00E582ff",
+      "textColor": "dfdfdf",
       "textFontSize": 20,
       "textFontWeight": "regular"
    },
@@ -5104,7 +5104,7 @@
       },
       "maxColumns": 6,
       "maxRows": 5,
-      "separatorColor": "ADADAD",
+      "separatorColor": "383838",
       "size": {
          "width": "available"
       },
@@ -5199,7 +5199,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "W"
    },
    "wButtonHintForegroundStyle": {
@@ -5227,22 +5227,22 @@
    "wButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "2"
    },
    "wButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "%"
    },
    "wButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "°C"
    },
    "wButtonHintSymbolsStyle": {
@@ -5301,8 +5301,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "2"
    },
    "wButtonUppercaseStateForegroundStyle": {
@@ -5372,8 +5372,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "scissors"
    },
    "xButtonForegroundStyle": {
@@ -5383,7 +5383,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "X"
    },
    "xButtonHintForegroundStyle": {
@@ -5415,22 +5415,22 @@
    "xButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "^"
    },
    "xButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "×"
    },
    "xButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "+"
    },
    "xButtonHintSymbolsStyle": {
@@ -5499,8 +5499,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "-"
    },
    "xButtonUppercaseStateForegroundStyle": {
@@ -5564,7 +5564,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "Y"
    },
    "yButtonHintForegroundStyle": {
@@ -5592,22 +5592,22 @@
    "yButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "6"
    },
    "yButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "≈"
    },
    "yButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "≒"
    },
    "yButtonHintSymbolsStyle": {
@@ -5665,8 +5665,8 @@
          "y": 0.28000000000000003
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "6"
    },
    "yButtonUppercaseStateForegroundStyle": {
@@ -5736,8 +5736,8 @@
          "y": 0.81999999999999995
       },
       "fontSize": "8",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "systemImageName": "arrow.turn.up.left"
    },
    "zButtonForegroundStyle": {
@@ -5747,7 +5747,7 @@
       },
       "fontSize": 20,
       "highlightColor": "000000",
-      "normalColor": "000000",
+      "normalColor": "feffff",
       "text": "Z"
    },
    "zButtonHintForegroundStyle": {
@@ -5779,22 +5779,22 @@
    "zButtonHintSymbolsForegroundStyle1": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "—"
    },
    "zButtonHintSymbolsForegroundStyle2": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "~"
    },
    "zButtonHintSymbolsForegroundStyle3": {
       "buttonStyleType": "text",
       "fontSize": "14",
-      "highlightColor": "feffff",
-      "normalColor": "000000",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff",
       "text": "～"
    },
    "zButtonHintSymbolsStyle": {
@@ -5863,8 +5863,8 @@
          "y": 0.23000000000000001
       },
       "fontSize": "11",
-      "highlightColor": "433C3C99",
-      "normalColor": "433C3C01",
+      "highlightColor": "ffffff",
+      "normalColor": "feffff01",
       "text": "_"
    },
    "zButtonUppercaseStateForegroundStyle": {

@@ -1,15 +1,15 @@
 // lib/effects/conditionStyle.libsonnet
 
-local baseStyle = (import 'baseStyle.libsonnet')();
+local buttonStyle = import 'buttonStyle.libsonnet';
 
 local enterButtonBackgroundStyle = [
   {
-    styleName: baseStyle.systemButtonBackgroundStyleName,
+    styleName: buttonStyle.systemButtonBackgroundStyleName,
     conditionKey: '$returnKeyType',
     conditionValue: [0, 2, 3, 5, 6, 8, 11],
   },
   {
-    styleName: baseStyle.blueButtonBackgroundStyleName,
+    styleName: buttonStyle.blueButtonBackgroundStyleName,
     conditionKey: '$returnKeyType',
     conditionValue: [1, 4, 7, 9, 10], 
   },
@@ -17,12 +17,12 @@ local enterButtonBackgroundStyle = [
 
 local enterButtonForegroundStyle = [
   {
-    styleName: baseStyle.systemButtonForegroundStyleName,
+    styleName: buttonStyle.systemButtonForegroundStyleName,
     conditionKey: '$returnKeyType',
     conditionValue: [0, 2, 3, 5, 6, 8, 11],
   },
   {
-    styleName: baseStyle.blueButtonForegroundStyleName,
+    styleName: buttonStyle.blueButtonForegroundStyleName,
     conditionKey: '$returnKeyType',
     conditionValue: [1, 4, 7, 9, 10],
   },

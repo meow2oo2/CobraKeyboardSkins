@@ -1,6 +1,6 @@
 // lib/inputs/hintSymbols.libsonnet
 
-// local fileImage = (import "../imports.libsonnet").fileImage; // image
+// local fileImage = (import "../imports.libsonnet").fileImage; 
 
 local name = import "name.libsonnet";
 local defaultSymbolWidth = "1em";
@@ -135,7 +135,7 @@ function(app)
       selectedIndex: 0,
       symbolWidth: defaultSymbolWidth,
       actions: [
-        { action: { symbol: "#" } },
+        { action: { symbol: "＃" } },
         { action: { symbol: "·" } },
         { action: { symbol: "•" } },
       ],
@@ -152,7 +152,7 @@ function(app)
   },
 
   [name.buttonName.gButton]: {
-      selectedIndex: 2,
+      selectedIndex: 0,
       symbolWidth: defaultSymbolWidth,
       actions: [
         { action: { symbol: "!" } },
@@ -232,7 +232,7 @@ function(app)
   },
 
   [name.buttonName.vButton]: {
-      selectedIndex: 2,
+      selectedIndex: 0,
       symbolWidth: defaultSymbolWidth,
       actions: [
         { action: { symbol: "？" } },

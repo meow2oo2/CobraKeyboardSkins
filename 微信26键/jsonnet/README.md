@@ -1,11 +1,4 @@
 # 「微信26键」
-> 
-> ⚠️ **提示**
-> 
-> 只适配了「元书输入法」的iOS键盘皮肤文件。
->
-> PC端编译至少需要配置jsonnet
-> 
 
 ---
 
@@ -50,10 +43,16 @@ jsonnet/
 
 在`name`文件中`alphabetic_26`填入你的英文方案ID，并重新执行`main.jsonnet`。
 
+**按键划动/长按符号如何更改？**
+
+所有输入行为都在`inputs/`下，其中`swipe`存放划动符号，`hintSymbols`存放长按符号。
+
+**按键颜色、字体大小等如何自定义？**
+
+常用的基础参数都在`basic/`下进行配置，部分不常用的在`styles/buttonStyle`中。
 
 **注：**
 <hr>
 
 - PC端执行「`main.jsonnet`」或「`main.py`」编译。
 - 比如Windows终端执行: `jsonnet -S -m .\ jsonnet\main.jsonnet`。
-- 传参和设计模式有问题, 想法是适配仓和元书的, 但越写越乱, 先凑合用用...

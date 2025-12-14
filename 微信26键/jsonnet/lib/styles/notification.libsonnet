@@ -1,21 +1,21 @@
 // lib/effects/notification.libsonnet
 
-local baseStyle = (import 'baseStyle.libsonnet')();
+local buttonStyle = import 'buttonStyle.libsonnet';
 
 
 local enterPreeditStateStyleNotification = {
   enterPreeditStateStyleNotification: {
     notificationType: 'preeditChanged',
-    backgroundStyle: baseStyle.blueButtonBackgroundStyleName,
-    foregroundStyle: baseStyle.blueButtonForegroundStyleName,
+    backgroundStyle: buttonStyle.blueButtonBackgroundStyleName,
+    foregroundStyle: buttonStyle.blueButtonForegroundStyleName,
   },
 };
 
 local spacePreeditStateStyleNotification = {
   spacepreeditStateStyleNotification: {
     notificationType: 'preeditChanged',
-    backgroundStyle: baseStyle.alphabeticButtonBackgroundStyleName,
-    foregroundStyle: baseStyle.spacePreeditStateForegroundStyleName,
+    backgroundStyle: buttonStyle.alphabeticButtonBackgroundStyleName,
+    foregroundStyle: buttonStyle.spacePreeditStateForegroundStyleName,
   },
 };
 

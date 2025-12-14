@@ -1,12 +1,21 @@
 // lib/imports.libsonnet
 {
-  baseParam: {
-    color: import '../lib/basic/color.libsonnet',
-    font: import '../lib/basic/font.libsonnet',
-    inner: import '../lib/basic/inner.libsonnet',
-    offset: import '../lib/basic/offset.libsonnet', 
-    scale: import '../lib/basic/scale.libsonnet', 
-  },
+  // baseParams(app):
+  //   if app == "cskin" then (import '../lib/basic/cskin_base_params.libsonnet')
+  //   else if app == "hskin" then (import '../lib/basic/hskin_base_params.libsonnet')
+  //   else error "no such app baseParams",
+
+  // baseParams:{ 
+  //   cskin: import '../lib/basic/cskin_base_params.libsonnet',
+  //   hskin: import '../lib/basic/hskin_base_params.libsonnet',
+  // },
+
+  baseParams: 
+    local color = import '../lib/basic/color.libsonnet';
+    local font = import '../lib/basic/font.libsonnet';
+    local inner = import '../lib/basic/inner.libsonnet';
+    local offset = import '../lib/basic/offset.libsonnet';
+    color + font + inner + offset,
 
   preedit: import "../lib/processors/preeditBlock.libsonnet",  
   toolbar: import "../lib/processors/toolbarBlock.libsonnet",
@@ -23,11 +32,10 @@
   getLayout: import "../lib/layouts/layout.libsonnet",
 
   animation : import "../lib/styles/animation.libsonnet",
-  baseStyle : import "../lib/styles/baseStyle.libsonnet",
+  buttonStyle : import "../lib/styles/buttonStyle.libsonnet",
   conditionStyle : import "../lib/styles/conditionStyle.libsonnet",
   notification: import "../lib/styles/notification.libsonnet",
   fileImage: import '../lib/styles/fileImage.libsonnet',
   javascript: import '../lib/styles/javascript.libsonnet',
-  panelStyle: import '../lib/styles/panelStyle.libsonnet',
   
 }

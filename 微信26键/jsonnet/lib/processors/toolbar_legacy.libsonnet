@@ -2,17 +2,17 @@
 
 local Imports = import "../imports.libsonnet";
 local utils = import "../utils.libsonnet";
-local baseStyle = (Imports.baseStyle)();
+local buttonStyle = Imports.buttonStyle;
 
-local toolbarBackgroundStyleName = baseStyle.toolbarBackgroundStyleName;
+local toolbarBackgroundStyleName = buttonStyle.toolbarBackgroundStyleName;
 local horizontalCandidateStyleName = 'horizontalCandidateStyle';
 local verticalCandidateStyleName = 'verticalCandidateStyle';
-local candidateContextMenuStyleName = baseStyle.candidateContextMenuStyleName;
-local candidateStateButtonStyleName = baseStyle.candidateStateButtonStyleName;
-local toolbarButtonBackgroundStyleName = baseStyle.toolbarButtonBackgroundStyleName;
-local toolbarButtonRealBackgroundStyleName = baseStyle.toolbarButtonRealBackgroundStyleName;
-local candidateStateButtonSeparatorForegroundStyleName = baseStyle.candidateStateButtonSeparatorForegroundStyleName;
-local verticalCandidateButtonBackgroundStyleName = baseStyle.systemButtonBackgroundStyleName;
+local candidateContextMenuStyleName = buttonStyle.candidateContextMenuStyleName;
+local candidateStateButtonStyleName = buttonStyle.candidateStateButtonStyleName;
+local toolbarButtonBackgroundStyleName = buttonStyle.toolbarButtonBackgroundStyleName;
+local toolbarButtonRealBackgroundStyleName = buttonStyle.toolbarButtonRealBackgroundStyleName;
+local candidateStateButtonSeparatorForegroundStyleName = buttonStyle.candidateStateButtonSeparatorForegroundStyleName;
+local verticalCandidateButtonBackgroundStyleName = buttonStyle.systemButtonBackgroundStyleName;
 
 function(app, device, orientation, theme, params, overrides={}) 
 
@@ -29,7 +29,7 @@ function(app, device, orientation, theme, params, overrides={})
       candidateContextMenu: candidateContextMenuStyleName
     },
     [toolbarBackgroundStyleName]: 
-      utils.newStyleFactory(baseStyle.newToolbarBackgroundStyle())(app, device, orientation, theme)
+      buttonStyle.newToolbarBackgroundStyle(app, theme)
   };
   
   local toolbarButtonConfig = std.foldl(
@@ -43,10 +43,11 @@ function(app, device, orientation, theme, params, overrides={})
           ],
           action: params[i].action
         },
-        ["toolbarButtonForegroundStyle" + (i + 1)]: utils.newStyleFactory(
-          utils.getKeyboardActionText(params[i], style="label")
-          + baseStyle.toolbarButtonForegroundStyle()
-        )(app, device, orientation, theme)
+        ["toolbarButtonForegroundStyle" + (i + 1)]: utils.newAutoStyle(
+          (if utils.objectHasAtPath(params[i], ["label", "systemImageName"]) then 
+            buttonStyle.toolbarButtonImageForegroundStyle
+          else buttonStyle.toolbarButtonTextForegroundStyle)
+          + utils.getKeyboardActionText(params[i], style="label"), app, theme)
       };
       acc + currentComponents
     ),
@@ -55,15 +56,15 @@ function(app, device, orientation, theme, params, overrides={})
   ) + 
   {
     [toolbarButtonBackgroundStyleName]: {type: "original", normalColor: "00000001"},
-    [toolbarButtonRealBackgroundStyleName]: utils.newStyleFactory(baseStyle.toolbarButtonRealBackgroundStyle)(app, device, orientation, theme)
+    [toolbarButtonRealBackgroundStyleName]: utils.newAutoStyle(buttonStyle.toolbarButtonRealBackgroundStyle, app, theme)
   } + overrides;
 
   local horizontalCandidateStyle = {
     [horizontalCandidateStyleName]: {
-      insets: Imports.baseParam.inner["横向候选字区域内距"],
+      insets: buttonStyle.baseParams("横向候选字区域内距"),
       candidateStateButtonStyle: candidateStateButtonStyleName,
-      itemSpacing: Imports.baseParam.color.nativeConfig["纵横候选列表其他参数"].itemSpacing,
-    } + baseStyle.candidatesStyle(theme),
+      itemSpacing: buttonStyle.baseParams("纵横候选列表其他参数", "itemSpacing"),
+    } + buttonStyle.candidatesStyle(theme),
     [candidateStateButtonStyleName]: {
       backgroundStyle: toolbarButtonBackgroundStyleName,
       foregroundStyle: [
@@ -71,15 +72,15 @@ function(app, device, orientation, theme, params, overrides={})
         "candidateStateButtonForegroundStyle"
       ]
     },
-    [candidateStateButtonSeparatorForegroundStyleName]: utils.newStyleFactory(
-      baseStyle.candidateStateButtonSeparatorForegroundStyle)(app, device, orientation, theme),
+    [candidateStateButtonSeparatorForegroundStyleName]: utils.newAutoStyle(
+      buttonStyle.candidateStateButtonSeparatorForegroundStyle(theme), app, theme),
     candidateStateButtonForegroundStyle: 
-      utils.newStyleFactory(baseStyle.candidateStateButtonForegroundStyle)(app, device, orientation, theme)
+      utils.newAutoStyle(buttonStyle.candidateStateButtonForegroundStyle, app, theme)
   };
 
   local verticalCandidateStyle = {
     [verticalCandidateStyleName]: {
-      insets: Imports.baseParam.inner["纵向候选布局内距"], 
+      insets: buttonStyle.baseParams("纵向候选布局内距"), 
       bottomRowHeight: Imports.getSize(device, orientation, "verticalLastRowStyleSize").size,
       backgroundStyle: "verticalCandidateBackgroundStyle",
       candidateStyle: "verticalCandidateOfCandidateStyle",
@@ -89,14 +90,14 @@ function(app, device, orientation, theme, params, overrides={})
       backspaceButtonStyle: "verticalCandidateBackspaceButtonStyle",
     },
     verticalCandidateBackgroundStyle: 
-      utils.newStyleFactory(baseStyle.verticalCandidateBackgroundStyle())(app, device, orientation, theme),
+      utils.newAutoStyle(buttonStyle.verticalCandidateBackgroundStyle, app, theme),
 
     verticalCandidateOfCandidateStyle: {
-      insets: Imports.baseParam.inner["纵向候选字区域内距"],
-      cornerRadius: Imports.baseParam.color.nativeConfig["纵横候选列表其他参数"].cornerRadius,
+      insets: buttonStyle.baseParams("纵向候选字区域内距"),
+      cornerRadius: buttonStyle.baseParams("纵横候选列表其他参数", "cornerRadius"),
     } 
-    + Imports.baseParam.color.nativeConfig["纵向候选区域样式"][theme]
-    + baseStyle.candidatesStyle(theme),
+    + buttonStyle.baseParams("纵向候选区域样式")[theme]
+    + buttonStyle.candidatesStyle(theme),
 
   };
 
@@ -138,7 +139,7 @@ local verticalCandidateButtonStyles =
           backgroundStyle: verticalCandidateButtonBackgroundStyleName,
           foregroundStyle: [foregroundStyleKeyName],
         },
-        [foregroundStyleKeyName]: utils.newStyleFactory(mapping.specificForegroundStyleRef + baseStyle.verticalForegroundStyle)(app, device, orientation, theme),
+        [foregroundStyleKeyName]: utils.newAutoStyle(mapping.specificForegroundStyleRef + buttonStyle.verticalForegroundStyle, app, theme)
       };
       acc + currentStyles
     ),
@@ -148,7 +149,7 @@ local verticalCandidateButtonStyles =
 
 local candidateContextMenuStyle = {
   [candidateContextMenuStyleName]: [
-    // { name: '空格', action: 'space' },
+    // { name: "空格", action: "space" },
   ]
 };
  

@@ -2,6 +2,11 @@
 
 local name = (import '../imports.libsonnet').name;
 
+local defaultOffset = {
+  targetScale: {},
+  center: {},
+};
+
 local backgroundStyle = {
   "键盘区背景" : {
     normalImage: { file: "anjian26", image: "IMG1" },
@@ -26,8 +31,8 @@ local backgroundStyle = {
   },
   "提示背景" : {
     normalImage: { file: "hint", image: "IMG1" },
-    contentMode: "scaleAspectFit"
-  }, // IMG3
+    contentMode: "scaleAspectFill"
+  }, 
   "长按背景" : {
     normalImage: { file: "anjian26", image: "IMG1" },
   },
@@ -50,11 +55,6 @@ local backgroundStyle = {
 };
 
 local foregroundStyle = {
-
-local defaultOffset = {
-  targetScale: {},
-  center: {},
-},
 
 [name.buttonName.qButton]: { 
   foregroundStyle: {
@@ -577,28 +577,36 @@ local defaultOffset = {
   },
 },
 
-
 };
 
-local imageConfig = {
 
-  "工具栏按钮前景": {
-    normalImage: { file: "letter", image: "IMG36" },
-    highlightImage: { file: "letter", image: "IMG36" },
+local extraImageStyle = {
+
+  "工具栏主按钮前景": {
+    foregroundStyle: {
+      insets: { top: 3, bottom: 3, left: 5, right: 5 },
+      normalImage: { file: "logo", image: "IMG1" },
+      highlightImage: { file: "logo", image: "IMG1" },
+    },
   },
   "横向候选展开按钮前景": {
-    normalImage: { file: "letter", image: "IMG36" },
-    highlightImage: { file: "letter", image: "IMG36" },
+    foregroundStyle: {
+      normalImage: { file: "letter", image: "IMG36" },
+      highlightImage: { file: "letter", image: "IMG36" },
+    },
   },
   "纵向候选收起按钮前景": {
-    normalImage: { file: "letter", image: "IMG36" },
-    highlightImage: { file: "letter", image: "IMG36" },
+    foregroundStyle: {
+      normalImage: { file: "letter", image: "IMG36" },
+      highlightImage: { file: "letter", image: "IMG36" },
+    },
   },
 
 };
 
-{
-  backgroundStyle: backgroundStyle,
-  foregroundStyle: foregroundStyle,
-  imageConfig: imageConfig
-}
+
+
+
+backgroundStyle
++ foregroundStyle
++ extraImageStyle

@@ -40,7 +40,7 @@ function(device, orientation, sizeName)
 
         hintStyleSize: { size: { width: 48, height: 48 }},
         hintStyleFirstLowSize: { size: { width: 55, height: 55 }},
-        hintSymbolsSize: { size: { width: 30, height: 40 }},
+        hintSymbolsSize: { size: { width: 40, height: 45 }},
         candidateStateButtonSize: {size: { width: 45} },
         verticalLastRowStyleSize: {size: { height: 48} },
         toolbarButtonSize: {size: { width: "1/8" } },

@@ -75,19 +75,25 @@ local themeColor = {
   "长按背景" : {
     light: {
       normalColor: "FCFCFE",
+      normalBorderColor: "d2d2d3e6",
       normalShadowColor: "797B7E", // 仓shadowColor
+      shadowColor: "797B7E",
     },
     dark: {
-      normalColor: "00000003",
+      normalColor: "78797AFC",
+      normalBorderColor: "6E6E6E4D",
       normalShadowColor: "00000050", 
+      shadowColor: "797B7E",
     },
   },
 
   "长按选中背景" : {
     light: {
+      normalColor: "23c891",
       highlightColor: "23c891", // 仓normalColor
     },
     dark: {
+      normalColor: "23c891",
       highlightColor: "23c891",
     },
   },
@@ -98,7 +104,7 @@ local themeColor = {
       highlightColor: "000000",
     },
     dark: {
-      normalColor: "000000",
+      normalColor: "feffff",
       highlightColor: "000000",
     },
   },
@@ -245,14 +251,12 @@ local themeColor = {
 
 };
 
-
-
-local nativeConfig = {
+local extraNativeStyle = {
 
   "背景色通用参数":{
     cornerRadius: 7,
-    // borderSize: 3,
-    // shadowRadius: 2,
+    borderSize: 1,
+    shadowRadius: 3,
     shadowOffset: { x: 0, y: 3 },
     shadowOpacity: 0.8,
   },
@@ -287,7 +291,6 @@ local nativeConfig = {
   },
   
   "纵横候选列表其他参数": {
-    itemSpacing: 6, // 仓横向候选间隙
     cornerRadius: 9,
     "最大横向候选字显示数量": 8,
     "最大纵向候选字列表行数": 6,
@@ -298,8 +301,5 @@ local nativeConfig = {
 
 
 
-{
-  nativeConfig: nativeConfig,
-  themeColor: themeColor
-  // themeColor: if true then themeColor else {}
-}
+themeColor
++ extraNativeStyle
